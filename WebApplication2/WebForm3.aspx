@@ -213,7 +213,7 @@ img.lazy-removed {
 					</picture> 
 				</div> 
 				<div class="sfc-card-content"> 
-					<div class="sfc-card-title">Process to Onboard New Infrastructure</div> 
+					<div class="sfc-card-title"><asp:LinkButton ID="LinkButton2" runat="server" data-toggle="modal" data-target="#myModal" class="sfc-card-title">Process to Onboard New Infrastructure</asp:LinkButton></div>           
 					<div class="sfc-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </div> 
 				</div>
 			</div>
@@ -251,68 +251,149 @@ img.lazy-removed {
 		
 		</div>
          </div>
-         <div class="modal fade" id="myModal7" role="dialog">
+        <div class="container">
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+         <ul>
+                            <li>
+                                <div>
+                                    <asp:Label ID="Label1" runat="server" Text="CI ID"></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:TextBox ID="CI_ID" runat="server"></asp:TextBox>
+                                </div>
+                            </li>
+                             <li>
+                                <div>
+                                    <asp:Label ID="Label3" runat="server" Text="CI Name"></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:TextBox ID="CI_NAME" runat="server"></asp:TextBox>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <asp:Label ID="Label2" runat="server" Text="CI STATUS"></asp:Label>
+                                </div>
+
+                                <div>
+                                    <asp:DropDownList ID="DropDownList2" runat="server">
+                                        <asp:ListItem>----Select----</asp:ListItem>
+                                        <asp:ListItem>Ordered</asp:ListItem>
+                                        <asp:ListItem>Received</asp:ListItem>
+                                        <asp:ListItem>Being Assembled</asp:ListItem>
+                                        <asp:ListItem>Deployed</asp:ListItem>
+                                          <asp:ListItem>In Repair</asp:ListItem>
+                                          <asp:ListItem>Down</asp:ListItem>
+                                          <asp:ListItem>End Of Life</asp:ListItem>
+                                          <asp:ListItem>Transferred</asp:ListItem>
+                                          <asp:ListItem>Delete</asp:ListItem>
+                                          <asp:ListItem>In Inventory</asp:ListItem>
+                                          <asp:ListItem>On Loan</asp:ListItem>
+                                          <asp:ListItem>Disposed</asp:ListItem>
+                                          <asp:ListItem>Reserved</asp:ListItem>
+                                          <asp:ListItem>Return to Vendor</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </li>
+                            
+                                                   </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button1" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ <!-- Modal -->
+ <div class="modal fade" id="myModal111" role="dialog">
             <div class="modal-dialog">
-               <!-- Modal content-->
-               <div class="modal-content">
-                  <div class="top-part12">
-                     <asp:Image ID="Image13" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                     Magneto<i>lite</i>
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-                  <p class="heading12"> Infrastructure CI onboarding form</p>
-                  <div class="modal-body">
-                     <div class="modal-containt">
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="top-part12">
+                        <asp:Image ID="Image7" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
+                        Magneto<i>lite</i>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <p class="heading12"> Infrastructure CI onboarding form</p>
+                   
+
+                    <div class="modal-body">
+                                        <div class="modal-containt">
+
                         <ul>
-                           <li>
-                              <div>
-                                 <asp:Label ID="Label1" runat="server" Text="CI ID"></asp:Label>
-                              </div>
-                              <div>
-                                 <asp:TextBox ID="CI_ID" runat="server"></asp:TextBox>
-                              </div>
-                           </li>
-                           <li>
-                              <div>
-                                 <asp:Label ID="Label3" runat="server" Text="CI Name"></asp:Label>
-                              </div>
-                              <div>
-                                 <asp:TextBox ID="CI_NAME" runat="server"></asp:TextBox>
-                              </div>
-                           </li>
-                           <li>
-                              <div>
-                                 <asp:Label ID="Label2" runat="server" Text="CI STATUS"></asp:Label>
-                              </div>
-                              <div>
-                                 <asp:DropDownList ID="DropDownList2" runat="server">
-                                    <asp:ListItem>----Select----</asp:ListItem>
-                                    <asp:ListItem>Ordered</asp:ListItem>
-                                    <asp:ListItem>Received</asp:ListItem>
-                                    <asp:ListItem>Being Assembled</asp:ListItem>
-                                    <asp:ListItem>Deployed</asp:ListItem>
-                                    <asp:ListItem>In Repair</asp:ListItem>
-                                    <asp:ListItem>Down</asp:ListItem>
-                                    <asp:ListItem>End Of Life</asp:ListItem>
-                                    <asp:ListItem>Transferred</asp:ListItem>
-                                    <asp:ListItem>Delete</asp:ListItem>
-                                    <asp:ListItem>In Inventory</asp:ListItem>
-                                    <asp:ListItem>On Loan</asp:ListItem>
-                                    <asp:ListItem>Disposed</asp:ListItem>
-                                    <asp:ListItem>Reserved</asp:ListItem>
-                                    <asp:ListItem>Return to Vendor</asp:ListItem>
-                                 </asp:DropDownList>
-                              </div>
-                           </li>
-                        </ul>
+                            <li>
+                                <div>
+                                    <asp:Label ID="Label4" runat="server" Text="CI ID"></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                </div>
+                            </li>
+                             <li>
+                                <div>
+                                    <asp:Label ID="Label5" runat="server" Text="CI Name"></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <asp:Label ID="Label6" runat="server" Text="CI STATUS"></asp:Label>
+                                </div>
+
+                                <div>
+                                    <asp:DropDownList ID="DropDownList1" runat="server">
+                                        <asp:ListItem>----Select----</asp:ListItem>
+                                        <asp:ListItem>Ordered</asp:ListItem>
+                                        <asp:ListItem>Received</asp:ListItem>
+                                        <asp:ListItem>Being Assembled</asp:ListItem>
+                                        <asp:ListItem>Deployed</asp:ListItem>
+                                          <asp:ListItem>In Repair</asp:ListItem>
+                                          <asp:ListItem>Down</asp:ListItem>
+                                          <asp:ListItem>End Of Life</asp:ListItem>
+                                          <asp:ListItem>Transferred</asp:ListItem>
+                                          <asp:ListItem>Delete</asp:ListItem>
+                                          <asp:ListItem>In Inventory</asp:ListItem>
+                                          <asp:ListItem>On Loan</asp:ListItem>
+                                          <asp:ListItem>Disposed</asp:ListItem>
+                                          <asp:ListItem>Reserved</asp:ListItem>
+                                          <asp:ListItem>Return to Vendor</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </li>
+                            
+                                                   </ul>
                         <div class="clear"></div>
+
                         <asp:Button ID="Button6" runat="server" Text="Submit" CssClass="button1" />
                         <div class="clear"></div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                       
+                    </div>
+
+
+
+                </div>
             </div>
-         </div>
+        </div>
+
+  
+</div>
+
       </form>
    </body>
 </html>
