@@ -659,7 +659,7 @@ DeleteCommand="DELETE FROM [Audit_Infrastructure_CI] where [Transaction_ID]=@Tra
 
                    <asp:Panel runat="server" ID="panel7" Visible="false">
               <fieldset class="form-content">
-            <legend class="heading1">Grid display for attributes and relationship based on App Name</legend>
+            <legend class="heading1">Grid display for attributes and relationship based on Infra Name</legend>
                   <div class="table-wrapper">
                       <asp:GridView ID="GridView9" runat="server" AutoGenerateColumns="False" DataKeyNames="CR_Number" DataSourceID="SqlDataSource9">
                           <Columns>
