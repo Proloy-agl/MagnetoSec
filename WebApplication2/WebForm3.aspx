@@ -240,7 +240,8 @@ img.lazy-removed {
 				</div> 
 				<div class="sfc-card-content"> 
 					<div class="sfc-card-title">
-                        CMDB Metrics, Audits and Reports
+                        <asp:LinkButton ID="LinkButton3" runat="server"> CMDB Metrics, Audits and Reports</asp:LinkButton>
+                       
                         
 					</div> 
 					<div class="sfc-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </div> 
