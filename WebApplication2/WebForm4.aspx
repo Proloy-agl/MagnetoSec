@@ -436,9 +436,9 @@
                                <asp:BoundField DataField="Application_Complexity" HeaderText="Application_Complexity" SortExpression="Application_Complexity" />
                                <asp:BoundField DataField="Remedy_Group" HeaderText="Remedy_Group" SortExpression="Remedy_Group" />
                                <asp:BoundField DataField="Application_Environment" HeaderText="Application_Environment" SortExpression="Application_Environment" />
-                               <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
+                               <%--<asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
                                <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
-                               <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />
+                               <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
                            </Columns>
                        </asp:GridView>
                        </div>
@@ -454,9 +454,9 @@
                                <asp:BoundField DataField="System_Role" HeaderText="System_Role" SortExpression="System_Role" />
                                <asp:BoundField DataField="Site" HeaderText="Site" SortExpression="Site" />
                                <asp:BoundField DataField="OEM_Supported" HeaderText="OEM_Supported" SortExpression="OEM_Supported" />
-                               <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
+                               <%--<asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
                                <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
-                               <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />
+                               <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
                            </Columns>
                        </asp:GridView>
                            </div>
@@ -466,9 +466,9 @@
                                <asp:BoundField DataField="CR_Number" HeaderText="CR_Number" SortExpression="CR_Number" />
                                <asp:BoundField DataField="App_CI_Name" HeaderText="App_CI_Name" SortExpression="App_CI_Name" />
                                <asp:BoundField DataField="Infra_CI_Name" HeaderText="Infra_CI_Name" SortExpression="Infra_CI_Name" />
-                               <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
+                               <%--<asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
                                <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
-                               <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />
+                               <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
                            </Columns>
                        </asp:GridView>
                           </div>
@@ -478,9 +478,9 @@
                                <asp:BoundField DataField="CR_Number" HeaderText="CR_Number" SortExpression="CR_Number" />
                                <asp:BoundField DataField="Parent_Infra_CI_Name" HeaderText="Parent_Infra_CI_Name" SortExpression="Parent_Infra_CI_Name" />
                                <asp:BoundField DataField="Child_Infra_CI_Name" HeaderText="Child_Infra_CI_Name" SortExpression="Child_Infra_CI_Name" />
-                               <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
+                               <%--<asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
                                <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
-                               <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />
+                               <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
                            </Columns>
                        </asp:GridView>
                        </div>
