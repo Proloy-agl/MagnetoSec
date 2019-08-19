@@ -15,6 +15,140 @@
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet"/>
        <style>
+            body {
+            
+            background: #fff;
+        }
+             .container-wrapper {
+
+     background: #fff;
+ }
+            .main-containt{
+     width:1100px!important;
+     margin: 0 auto;
+     position:relative;
+	 padding-bottom:30px;
+}
+
+.card {
+    min-height: 23.38rem;
+    box-shadow: 0 0.125rem 0.625rem 0 rgba(0,0,0,0.2);
+    background: #fff;
+	position:relative;
+
+}
+.card-on-section {
+	float: left;
+	width:31.6%;
+    height: 428px;
+    position: relative;
+    margin: 0 0.5rem 0rem 0.5rem;
+    background: #fff;
+    border: solid 1px #d8d8d8;
+    overflow: hidden;
+	margin:-66px 1.5% 0 0;
+	border-top:0;
+}
+
+
+
+.sfc-card-img {
+    height: inherit;
+    overflow: hidden;
+}
+
+img.lazy-removed {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: inherit;
+}
+img.lazy-removed {
+    -webkit-transition: opacity 0.75s ease-in;
+    -moz-transition: opacity 0.75s ease-in;
+    -ms-transition: opacity 0.75s ease-in;
+    -o-transition: opacity 0.75s ease-in;
+    transition: opacity 0.75s ease-in;
+    opacity: 1;
+    min-height: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sfc-card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: none;
+	object-position: top center;
+}
+
+.col-right-ma
+{
+    margin-right: 0px;
+    margin-left:0;
+
+}
+
+
+.sfc-card-content {
+    position: absolute;
+    bottom: 0;
+    height: 162px;
+    opacity: 0.9;
+    background-color: #fff;
+    text-align: left;
+    width: 100%;
+}
+
+.sfc-card-title {
+    height: 52px;
+    font-size: 22px;
+    line-height: 1.18;
+    text-align: left;
+    color: #474747;
+    overflow: hidden;
+    width: auto;
+    margin: 7px 20px 11px 20px;
+    max-width: 322px;
+}
+.sfc-card-desc {
+    color: #848484;
+    font-size: 18px;
+    font-weight: 400;
+    overflow: hidden;
+    line-height: 1.2;
+    height: auto;
+    max-height: 85px;
+    width: auto;
+    padding: 0px 20px 0px 20px;
+
+}
+	.sfc-card-content:before {
+    position: absolute;
+    display: block;
+    content: " ";
+    bottom: 162px;
+    left: 50%;
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    width: 50%;
+}
+.sfc-card-content:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    bottom: 162px;
+    right: 50%;
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    width: 50%;
+}
+
 
        </style>
    </head>
@@ -67,38 +201,51 @@
                </div>
             </div>
             <div class="main-containt">
-               <div class="category">
-                  <h1>Key Functionalities</h1>
-                  <ul>
-                     <li>
-                         <div class="border1"></div>
-                        <asp:Image ID="Image6" runat="server" ImageUrl="~/Photos and Logos/MG_6836.jpg"/>
-                        <button class="button2" data-toggle="modal" data-target="#myModal7" data-dismiss="modal">Onboard Infrastructure</button>
-                     </li>
-                     <li>
-                         <div class="border1"></div>
-                        <asp:Image ID="Image7" runat="server" ImageUrl="~/Photos and Logos/MG_6836.jpg"/>
-                        <button class="button2">CI Administration</button>
-                     </li>
-                     <li>
-                         <div class="border1"></div>
-                        <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/MG_6836.jpg"/>
-                        <button class="button2">CI Completeness Report</button>
-                     </li>
-                     <li>
-                         <div class="border1"></div>
-                        <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/MG_6836.jpg"/>
-                        <button class="button2">Other CMDB Reports</button>
-                     </li>
-                     <li>
-                         <div class="border1"></div>
-                        <asp:Image ID="Image10" runat="server" ImageUrl="~/Photos and Logos/MG_6836.jpg" />
-                        <button class="button2">CI-CR Report</button>
-                     </li>
-                     <div class="clear"></div>
-                  </ul>
-               </div>
-            </div>
+		
+		
+		
+			<div class="card card-on-section"> 
+			    <div class="border1"></div>
+				<div class="sfc-card-img" style="display: block;"> 
+					<picture>
+                            <asp:Image ID="Im1" runat="server" ImageUrl="~/Photos and Logos/Tile4.jpg"  class="lazy-removed"  />
+						 
+					</picture> 
+				</div> 
+				<div class="sfc-card-content"> 
+					<div class="sfc-card-title">Process to Onboard New Infrastructure</div> 
+					<div class="sfc-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </div> 
+				</div>
+			</div>
+			<div class="card card-on-section"> 
+			    <div class="border1"></div>
+				<div class="sfc-card-img" style="display: block;"> 
+					<picture>    
+                         <asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/Tile1.jpg"  class="lazy-removed"  />
+						
+					</picture> 
+				</div> 
+				<div class="sfc-card-content"> 
+					<div class="sfc-card-title">Administration of CIs and Relationships</div> 
+					<div class="sfc-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </div> 
+				</div>
+			</div>
+			<div class="card card-on-section col-right-ma">
+				<div class="border1"></div>			
+				<div class="sfc-card-img" style="display: block;"> 
+					<picture>    
+						 <asp:Image ID="Image6" runat="server" ImageUrl="~/Photos and Logos/Tile3.jpg"  class="lazy-removed"  />
+					</picture> 
+				</div> 
+				<div class="sfc-card-content"> 
+					<div class="sfc-card-title">CMDB Metrics, Audits and Reports</div> 
+					<div class="sfc-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </div> 
+				</div>
+			</div>
+			<div class="clear"></div>
+		
+		
+		</div>
          </div>
          <div class="modal fade" id="myModal7" role="dialog">
             <div class="modal-dialog">

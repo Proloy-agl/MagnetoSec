@@ -82,6 +82,10 @@
     <Content Include="Photos and Logos\category.jpg" />
     <Content Include="Photos and Logos\front4.jpg" />
     <Content Include="Photos and Logos\sm-im.jpg" />
+    <Content Include="Photos and Logos\Tile1.jpg" />
+    <Content Include="Photos and Logos\Tile2.jpg" />
+    <Content Include="Photos and Logos\Tile3.jpg" />
+    <Content Include="Photos and Logos\Tile4.jpg" />
     <Content Include="Photos and Logos\user-icon.png" />
     <Content Include="Photos and Logos\MG_6836.jpg" />
     <Content Include="Photos and Logos\~banner.jpg" />
