@@ -13,5 +13,11 @@ namespace WebApplication2
         {
 
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm4.aspx");
+
+        }
     }
 }

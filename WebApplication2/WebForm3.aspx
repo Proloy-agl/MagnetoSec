@@ -226,7 +226,8 @@ img.lazy-removed {
 					</picture> 
 				</div> 
 				<div class="sfc-card-content"> 
-					<div class="sfc-card-title">Administration of CIs and Relationships</div> 
+					<div class="sfc-card-title"><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Administration of CIs and Relationships</asp:LinkButton> </div>
+                    
 					<div class="sfc-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </div> 
 				</div>
 			</div>
@@ -234,11 +235,14 @@ img.lazy-removed {
 				<div class="border1"></div>			
 				<div class="sfc-card-img" style="display: block;"> 
 					<picture>    
-						 <asp:Image ID="Image6" runat="server" ImageUrl="~/Photos and Logos/Tile3.jpg"  class="lazy-removed"  />
+						 <asp:Image ID="Image6" runat="server" ImageUrl="~/Photos and Logos/Tile5.jpg"  class="lazy-removed"  />
 					</picture> 
 				</div> 
 				<div class="sfc-card-content"> 
-					<div class="sfc-card-title">CMDB Metrics, Audits and Reports</div> 
+					<div class="sfc-card-title">
+                        CMDB Metrics, Audits and Reports
+                        
+					</div> 
 					<div class="sfc-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </div> 
 				</div>
 			</div>
