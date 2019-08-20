@@ -102,22 +102,29 @@ img.lazy-removed {
 }
 
 .sfc-card-title {
-    height: 52px;
-    font-size: 22px;
-    line-height: 1.18;
+    /* height: 52px; */
+    font-size: 21px;
+    /* line-height: 1.18; */
     text-align: left;
     color: #474747;
     overflow: hidden;
     width: auto;
-    margin: 7px 20px 11px 20px;
+    margin: 7px 20px 18px 20px;
     max-width: 322px;
+
+}
+.sfc-card-title a{
+    color:#23527c;
+}
+.sfc-card-title a:hover{
+color:black;
 }
 .sfc-card-desc {
-    color: #848484;
-    font-size: 18px;
+    color: ##6b6b6b;
+    font-size: 16px;
     font-weight: 400;
     overflow: hidden;
-    line-height: 1.2;
+    line-height: 1.3;
     height: auto;
     max-height: 85px;
     width: auto;
@@ -215,9 +222,9 @@ img.lazy-removed {
 				<div class="sfc-card-content"> 
 					<div class="sfc-card-title">
                         <%--<asp:LinkButton ID="LinkButton2" runat="server" data-toggle="modal" data-target="#myModal" class="sfc-card-title">Process to Onboard New Infrastructure</asp:LinkButton>--%>
-                        <asp:LinkButton ID="LinkButton2"  runat="server" data-toggle="modal" data-target="#myModal">Process to Onboard New Infrastructure</asp:LinkButton> 
+                        <asp:LinkButton ID="LinkButton2"  runat="server" data-toggle="modal" data-target="#myModal">Onboard New Infrastructure</asp:LinkButton> 
 					</div>           
-					<div class="sfc-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </div> 
+					<div class="sfc-card-desc">Browse through this link for onboarding infrastructures seamlessly through Service Requests.</div> 
 				</div>
 			</div>
 			<div class="card card-on-section"> 
@@ -229,9 +236,9 @@ img.lazy-removed {
 					</picture> 
 				</div> 
 				<div class="sfc-card-content"> 
-					<div class="sfc-card-title"><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Administration of CIs and Relationships</asp:LinkButton> </div>
+					<div class="sfc-card-title"><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Manage CIs and Relationships</asp:LinkButton> </div>
                     
-					<div class="sfc-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </div> 
+					<div class="sfc-card-desc">Browse through this link to manage CIs and inter relationships for maintenance of currency of CMDB outside any change request.</div> 
 				</div>
 			</div>
 			<div class="card card-on-section col-right-ma">
@@ -247,7 +254,7 @@ img.lazy-removed {
                        
                         
 					</div> 
-					<div class="sfc-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </div> 
+					<div class="sfc-card-desc">Do you wish to generate CMDB Reports, Metrics or perform any audits on the data in CMDB. Explore here.</div> 
 				</div>
 			</div>
 			<div class="clear"></div>
