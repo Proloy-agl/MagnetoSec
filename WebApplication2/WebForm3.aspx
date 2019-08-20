@@ -213,7 +213,10 @@ img.lazy-removed {
 					</picture> 
 				</div> 
 				<div class="sfc-card-content"> 
-					<div class="sfc-card-title"><asp:LinkButton ID="LinkButton2" runat="server" data-toggle="modal" data-target="#myModal" class="sfc-card-title">Process to Onboard New Infrastructure</asp:LinkButton></div>           
+					<div class="sfc-card-title">
+                        <%--<asp:LinkButton ID="LinkButton2" runat="server" data-toggle="modal" data-target="#myModal" class="sfc-card-title">Process to Onboard New Infrastructure</asp:LinkButton>--%>
+                        <asp:LinkButton ID="LinkButton2"  runat="server" data-toggle="modal" data-target="#myModal">Process to Onboard New Infrastructure</asp:LinkButton> 
+					</div>           
 					<div class="sfc-card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </div> 
 				</div>
 			</div>
@@ -267,25 +270,25 @@ img.lazy-removed {
         <div class="modal-body">
          <ul>
                             <li>
-                                <div>
+                                <label>
                                     <asp:Label ID="Label1" runat="server" Text="CI ID"></asp:Label>
-                                </div>
+                                </label>
                                 <div>
                                     <asp:TextBox ID="CI_ID" runat="server"></asp:TextBox>
                                 </div>
                             </li>
                              <li>
-                                <div>
+                                <label>
                                     <asp:Label ID="Label3" runat="server" Text="CI Name"></asp:Label>
-                                </div>
+                                </label>
                                 <div>
                                     <asp:TextBox ID="CI_NAME" runat="server"></asp:TextBox>
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <label>
                                     <asp:Label ID="Label2" runat="server" Text="CI STATUS"></asp:Label>
-                                </div>
+                                </label>
 
                                 <div>
                                     <asp:DropDownList ID="DropDownList2" runat="server">
@@ -307,10 +310,12 @@ img.lazy-removed {
                                     </asp:DropDownList>
                                 </div>
                             </li>
+                                <div class="clear"></div>
                             
                                                    </ul>
         </div>
         <div class="modal-footer">
+             <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/m-logo.png"  class="logo1-secured" />
           <button type="button" class="button1" data-dismiss="modal">Submit</button>
         </div>
       </div>

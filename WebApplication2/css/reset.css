@@ -54,7 +54,7 @@ a:hover
   text-decoration:none;
   
  }
- a:focus {
+a:focus {
     outline:none;
     text-decoration:none;
 }
@@ -62,9 +62,10 @@ button
 {
     outline: none!important;
 }
-button:focus
+button:focus,  input:focus
 {
-    box-shadow:none!important;
+        box-shadow: none!important;
+    border: none!important;
 }
 
 

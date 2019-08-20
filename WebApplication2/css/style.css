@@ -271,3 +271,62 @@ img.lazy-removed {
 {
     display:none!important;
 }
+.modal-header {
+    padding: 12px;
+    border-bottom: 1px solid #e5e5e5;
+    background-image: linear-gradient(to right, #6031A6, #B51DB7);
+    color:#fff;
+}
+.modal-body {
+    position: relative;
+    /* padding: 15px; */
+    padding: 25px 25px 25px 35px;
+    background: #f9f9f9;
+    border: 2px solid #dfcce2;
+    margin: 20px;
+    border-radius: 10px;
+}
+.modal-body ul li {
+    list-style: none;
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.modal-body ul li label {
+    float: left;
+    margin-left: 12px;
+    width:33%;
+}
+.modal-body ul li div {
+    float: left;
+    margin-left: 12px;
+    width: 58%;
+}
+.modal-body ul li input {
+    border: 1px solid #A7A9B3;
+    border-radius: 6px;
+    height: 31px;
+
+    width: 99.5%;
+    padding-left: .2%;
+}
+.modal-body ul li select {
+    border: 1px solid #A7A9B3;
+    border-radius: 6px;
+    height: 31px;
+
+    width: 99.5%;
+    padding-left: .2%;
+}
+.modal-header .close {
+    color: white;
+    opacity:1;
+}
+modal-footer .logo1-secured {
+    float: left;
+    margin: 0 30px 0 9px;
+    width: 163px;
+}
+
