@@ -220,13 +220,13 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// GridView1 control.
+        /// GridView13 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView GridView13;
         
         /// <summary>
         /// GridView2 control.
@@ -470,6 +470,15 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel panel8;
+        
+        /// <summary>
+        /// SqlDataSource15 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource15;
         
         /// <summary>
         /// SqlDataSource14 control.
