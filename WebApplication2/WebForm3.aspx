@@ -338,10 +338,10 @@ function off() {
          <ul>
                             <li>
                                 <label>
-                                    <asp:Label ID="Label1" runat="server" Text="CI ID"></asp:Label>
+                                    <asp:Label ID="Label1" runat="server" Text="SR No."></asp:Label>
                                 </label>
                                 <div>
-                                    <asp:TextBox ID="CI_ID" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="SR_ID" runat="server"></asp:TextBox>
                                 </div>
                             </li>
                              <li>

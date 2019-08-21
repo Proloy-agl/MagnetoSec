@@ -157,13 +157,13 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// CI_ID control.
+        /// SR_ID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CI_ID;
+        protected global::System.Web.UI.WebControls.TextBox SR_ID;
         
         /// <summary>
         /// Label3 control.
