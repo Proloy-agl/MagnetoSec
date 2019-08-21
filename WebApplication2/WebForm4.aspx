@@ -299,7 +299,7 @@
         }
         .table-wrapper div{
             width:100%;
-            margin:0 auto;;
+            margin:0 auto;
         }
 
         .table-wrapper table {
