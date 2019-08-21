@@ -256,24 +256,6 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.GridView GridView4;
         
         /// <summary>
-        /// GridView5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView5;
-        
-        /// <summary>
-        /// SqlDataSource5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource5;
-        
-        /// <summary>
         /// SqlDataSource4 control.
         /// </summary>
         /// <remarks>
@@ -301,15 +283,6 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
         
         /// <summary>
-        /// SqlDataSource1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-        
-        /// <summary>
         /// panel6 control.
         /// </summary>
         /// <remarks>
@@ -319,13 +292,13 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.Panel panel6;
         
         /// <summary>
-        /// GridView6 control.
+        /// GridView15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView6;
+        protected global::System.Web.UI.WebControls.GridView GridView15;
         
         /// <summary>
         /// GridView7 control.
@@ -337,24 +310,6 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.GridView GridView7;
         
         /// <summary>
-        /// GridView8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView8;
-        
-        /// <summary>
-        /// SqlDataSource8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource8;
-        
-        /// <summary>
         /// SqlDataSource7 control.
         /// </summary>
         /// <remarks>
@@ -362,24 +317,6 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource7;
-        
-        /// <summary>
-        /// SqlDataSource6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource6;
-        
-        /// <summary>
-        /// GridView15 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView15;
         
         /// <summary>
         /// panel7 control.
@@ -479,15 +416,6 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource14;
-        
-        /// <summary>
-        /// SqlDataSource13 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource13;
         
         /// <summary>
         /// Button2 control.
