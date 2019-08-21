@@ -738,33 +738,39 @@ DeleteCommand="DELETE FROM [Audit_Infrastructure_CI] where [Transaction_ID]=@Tra
                    <asp:Panel runat="server" ID="panel7" Visible="false">
               <fieldset class="form-content">
             <legend class="heading1">Grid display for attributes and relationship based on Infra Name</legend>
-                  <h4>Infrastructure Attributes from Magneto</h4>
+                 
                   <div class="table-wrapper">
-                       <h4>Infrastructure Attributes(Magneto)</h4>
-                      <asp:GridView ID="GridView9" runat="server" AutoGenerateColumns="False" DataKeyNames="CR_Number" DataSourceID="SqlDataSource9">
-                          <Columns>
-                              <asp:BoundField DataField="CR_Number" HeaderText="CR_Number" ReadOnly="True" SortExpression="CR_Number" />
-                              <asp:BoundField DataField="CI_Name" HeaderText="CI_Name" SortExpression="CI_Name" />
-                              <asp:BoundField DataField="System_Environment" HeaderText="System_Environment" SortExpression="System_Environment" />
-                              <asp:BoundField DataField="Primary_Capability" HeaderText="Primary_Capability" SortExpression="Primary_Capability" />
-                              <asp:BoundField DataField="Owner" HeaderText="Owner" SortExpression="Owner" />
-                              <asp:BoundField DataField="Supported_By" HeaderText="Supported_By" SortExpression="Supported_By" />
-                              <asp:BoundField DataField="System_Role" HeaderText="System_Role" SortExpression="System_Role" />
-                              <asp:BoundField DataField="Site" HeaderText="Site" SortExpression="Site" />
-                              <asp:BoundField DataField="OEM_Supported" HeaderText="OEM_Supported" SortExpression="OEM_Supported" />
-                              <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
-                              <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
-                              <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />
-                          </Columns>
-                      </asp:GridView>
-                      <asp:SqlDataSource ID="SqlDataSource9" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Audit_Infrastructure_CI] WHERE ([CI_Name] = @CI_Name)">
-                          <SelectParameters>
-                              <asp:ControlParameter ControlID="TextBox5" Name="CI_Name" PropertyName="Text" Type="String" />
-                          </SelectParameters>
-                      </asp:SqlDataSource>
+                       <h4>Infrastructure Attributes</h4>
+                      <asp:GridView ID="GridView14" runat="server" DataSourceID="SqlDataSource16" AutoGenerateColumns="False" DataKeyNames="CR_Number">
+                      <Columns>
+                          <asp:BoundField DataField="CR_Number" HeaderText="CR_Number" ReadOnly="True" SortExpression="CR_Number" />
+                          <asp:BoundField DataField="CI_Name" HeaderText="CI_Name" SortExpression="CI_Name" />
+                          <asp:BoundField DataField="System_Environment" HeaderText="System_Environment" SortExpression="System_Environment" />
+                          <asp:BoundField DataField="Primary_Capability" HeaderText="Primary_Capability" SortExpression="Primary_Capability" />
+                          <asp:BoundField DataField="Owner" HeaderText="Owner" SortExpression="Owner" />
+                          <asp:BoundField DataField="Supported_By" HeaderText="Supported_By" SortExpression="Supported_By" />
+                          <asp:BoundField DataField="System_Role" HeaderText="System_Role" SortExpression="System_Role" />
+                          <asp:BoundField DataField="Site" HeaderText="Site" SortExpression="Site" />
+                          <asp:BoundField DataField="OEM_Supported" HeaderText="OEM_Supported" SortExpression="OEM_Supported" />
+                          <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
+                          <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
+                          <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />
+                          <asp:BoundField DataField="CI_Name1" HeaderText="CI_Name1" SortExpression="CI_Name1" />
+                          <asp:BoundField DataField="IP_Address" HeaderText="IP_Address" SortExpression="IP_Address" />
+                          <asp:BoundField DataField="Operating_System" HeaderText="Operating_System" SortExpression="Operating_System" />
+                          <asp:BoundField DataField="Serial_No" HeaderText="Serial_No" SortExpression="Serial_No" />
+                          <asp:BoundField DataField="In_Service" HeaderText="In_Service" SortExpression="In_Service" />
+                          <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
+                          <asp:BoundField DataField="Last_Edited_Date" HeaderText="Last_Edited_Date" SortExpression="Last_Edited_Date" />
+                          <asp:BoundField DataField="Memory" HeaderText="Memory" SortExpression="Memory" />
+                          <asp:BoundField DataField="Hardware" HeaderText="Hardware" SortExpression="Hardware" />
+                          <asp:BoundField DataField="Building" HeaderText="Building" SortExpression="Building" />
+                      </Columns>
+                  </asp:GridView>
+                     
                   </div>
                   <div class="table-wrapper">
-                       <h4>App to Infra Relationships(Magneto)</h4>
+                       <h4>App to Infra Relationships</h4>
                       <asp:GridView ID="GridView10" runat="server" AutoGenerateColumns="False" DataKeyNames="Transaction_ID" DataSourceID="SqlDataSource10">
                           <Columns>
                               <asp:BoundField DataField="CR_Number" HeaderText="CR_Number" SortExpression="CR_Number" />
@@ -782,7 +788,7 @@ DeleteCommand="DELETE FROM [Audit_Infrastructure_CI] where [Transaction_ID]=@Tra
                       </asp:SqlDataSource>
                   </div>
                   <div class="table-wrapper">
-                       <h4>Infra to Infra Relationships(Magneto)</h4>
+                       <h4>Infra to Infra Relationships</h4>
                       <asp:GridView ID="GridView11" runat="server" AutoGenerateColumns="False" DataKeyNames="Transaction_ID" DataSourceID="SqlDataSource11">
                           <Columns>
                               <asp:BoundField DataField="CR_Number" HeaderText="CR_Number" SortExpression="CR_Number" />
@@ -800,28 +806,7 @@ DeleteCommand="DELETE FROM [Audit_Infrastructure_CI] where [Transaction_ID]=@Tra
                           </SelectParameters>
                       </asp:SqlDataSource>
                   </div>
-                  <div class="table-wrapper">
-                       <h4>Infrastructure Attributes(Device42)</h4>
-                      <asp:GridView ID="GridView12" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource12">
-                          <Columns>
-                              <asp:BoundField DataField="CI_Name" HeaderText="CI_Name" SortExpression="CI_Name" />
-                              <asp:BoundField DataField="IP_Address" HeaderText="IP_Address" SortExpression="IP_Address" />
-                              <asp:BoundField DataField="Operating_System" HeaderText="Operating_System" SortExpression="Operating_System" />
-                              <asp:BoundField DataField="Serial_No" HeaderText="Serial_No" SortExpression="Serial_No" />
-                              <asp:BoundField DataField="In_Service" HeaderText="In_Service" SortExpression="In_Service" />
-                              <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
-                              <asp:BoundField DataField="Last_Edited_Date" HeaderText="Last_Edited_Date" SortExpression="Last_Edited_Date" />
-                              <asp:BoundField DataField="Memory" HeaderText="Memory" SortExpression="Memory" />
-                              <asp:BoundField DataField="Hardware" HeaderText="Hardware" SortExpression="Hardware" />
-                              <asp:BoundField DataField="Building" HeaderText="Building" SortExpression="Building" />
-                          </Columns>
-                      </asp:GridView>
-                      <asp:SqlDataSource ID="SqlDataSource12" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [CI_INFRA_ATTRIBUTES_OUT] WHERE ([CI_Name] = @CI_Name)">
-                          <SelectParameters>
-                              <asp:ControlParameter ControlID="TextBox5" Name="CI_Name" PropertyName="Text" Type="String" />
-                          </SelectParameters>
-                      </asp:SqlDataSource>
-                  </div>
+                
 
                   </fieldset>
                        </asp:Panel>
@@ -829,8 +814,33 @@ DeleteCommand="DELETE FROM [Audit_Infrastructure_CI] where [Transaction_ID]=@Tra
                    <asp:Panel runat="server" ID="panel8" Visible="false" >
               <fieldset class="form-content">
             <legend class="heading1">Grid display for Joined Value</legend>
-                  <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource16"></asp:GridView>
-                  <asp:SqlDataSource ID="SqlDataSource16" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT CR_Number, CI_Name, System_Environment, Primary_Capability, Owner, Supported_By, System_Role, Site, OEM_Supported, Transaction_ID, Transaction_Timestamp, Transaction_Status, Expr1, IP_Address, Operating_System, Serial_No, In_Service, Type, Last_Edited_Date, Memory, Hardware, Building FROM (SELECT Audit_Infrastructure_CI.CR_Number, Audit_Infrastructure_CI.CI_Name, Audit_Infrastructure_CI.System_Environment, Audit_Infrastructure_CI.Primary_Capability, Audit_Infrastructure_CI.Owner, Audit_Infrastructure_CI.Supported_By, Audit_Infrastructure_CI.System_Role, Audit_Infrastructure_CI.Site, Audit_Infrastructure_CI.OEM_Supported, Audit_Infrastructure_CI.Transaction_ID, Audit_Infrastructure_CI.Transaction_Timestamp, Audit_Infrastructure_CI.Transaction_Status, CI_INFRA_ATTRIBUTES_OUT.CI_Name AS Expr1, CI_INFRA_ATTRIBUTES_OUT.IP_Address, CI_INFRA_ATTRIBUTES_OUT.Operating_System, CI_INFRA_ATTRIBUTES_OUT.Serial_No, CI_INFRA_ATTRIBUTES_OUT.In_Service, CI_INFRA_ATTRIBUTES_OUT.Type, CI_INFRA_ATTRIBUTES_OUT.Last_Edited_Date, CI_INFRA_ATTRIBUTES_OUT.Memory, CI_INFRA_ATTRIBUTES_OUT.Hardware, CI_INFRA_ATTRIBUTES_OUT.Building FROM Audit_Infrastructure_CI INNER JOIN CI_INFRA_ATTRIBUTES_OUT ON Audit_Infrastructure_CI.CI_Name = CI_INFRA_ATTRIBUTES_OUT.CI_Name) AS derivedtbl_1 WHERE (dbo.Audit_Application_CI.CI_Name = @CI_Name)">
+                  <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource16" AutoGenerateColumns="False" DataKeyNames="CR_Number">
+                      <Columns>
+                          <asp:BoundField DataField="CR_Number" HeaderText="CR_Number" ReadOnly="True" SortExpression="CR_Number" />
+                          <asp:BoundField DataField="CI_Name" HeaderText="CI_Name" SortExpression="CI_Name" />
+                          <asp:BoundField DataField="System_Environment" HeaderText="System_Environment" SortExpression="System_Environment" />
+                          <asp:BoundField DataField="Primary_Capability" HeaderText="Primary_Capability" SortExpression="Primary_Capability" />
+                          <asp:BoundField DataField="Owner" HeaderText="Owner" SortExpression="Owner" />
+                          <asp:BoundField DataField="Supported_By" HeaderText="Supported_By" SortExpression="Supported_By" />
+                          <asp:BoundField DataField="System_Role" HeaderText="System_Role" SortExpression="System_Role" />
+                          <asp:BoundField DataField="Site" HeaderText="Site" SortExpression="Site" />
+                          <asp:BoundField DataField="OEM_Supported" HeaderText="OEM_Supported" SortExpression="OEM_Supported" />
+                          <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
+                          <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
+                          <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />
+                          <asp:BoundField DataField="CI_Name1" HeaderText="CI_Name1" SortExpression="CI_Name1" />
+                          <asp:BoundField DataField="IP_Address" HeaderText="IP_Address" SortExpression="IP_Address" />
+                          <asp:BoundField DataField="Operating_System" HeaderText="Operating_System" SortExpression="Operating_System" />
+                          <asp:BoundField DataField="Serial_No" HeaderText="Serial_No" SortExpression="Serial_No" />
+                          <asp:BoundField DataField="In_Service" HeaderText="In_Service" SortExpression="In_Service" />
+                          <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
+                          <asp:BoundField DataField="Last_Edited_Date" HeaderText="Last_Edited_Date" SortExpression="Last_Edited_Date" />
+                          <asp:BoundField DataField="Memory" HeaderText="Memory" SortExpression="Memory" />
+                          <asp:BoundField DataField="Hardware" HeaderText="Hardware" SortExpression="Hardware" />
+                          <asp:BoundField DataField="Building" HeaderText="Building" SortExpression="Building" />
+                      </Columns>
+                  </asp:GridView>
+                  <asp:SqlDataSource ID="SqlDataSource16" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM Audit_Infrastructure_CI INNER JOIN CI_INFRA_ATTRIBUTES_OUT ON dbo.Audit_Infrastructure_CI.CI_Name = dbo.CI_INFRA_ATTRIBUTES_OUT.CI_Name AND (dbo.Audit_Infrastructure_CI.CI_Name = @CI_Name)">
                       <SelectParameters>
                           <asp:ControlParameter ControlID="TextBox5" Name="CI_Name" PropertyName="Text" />
                       </SelectParameters>
