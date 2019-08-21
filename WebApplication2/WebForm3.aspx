@@ -156,8 +156,54 @@ color:black;
     width: 50%;
 }
 
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index:999;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.btnOver {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.btnOver:hover {opacity: 0.6}
+
 
        </style>
+       <script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
    </head>
    <body>
       <form runat="server">
@@ -236,7 +282,9 @@ color:black;
 					</picture> 
 				</div> 
 				<div class="sfc-card-content"> 
-					<div class="sfc-card-title"><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Manage CIs and Relationships</asp:LinkButton> </div>
+					<div class="sfc-card-title"><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Manage CIs and Relationships</asp:LinkButton>
+                        <button onclick="on()" type="button">Turn on overlay effect</button>
+					</div>
                     
 					<div class="sfc-card-desc">Browse through this link to manage CIs and inter relationships for maintenance of currency of CMDB outside any change request.</div> 
 				</div>
@@ -262,6 +310,18 @@ color:black;
 		
 		</div>
          </div>
+          
+          <div id="overlay" onclick="off()">
+  <div id="text">Search By <br />
+     
+                  <asp:Button ID="Button1" runat="server" CssClass="btnOver" Text="CR Number" />
+                  <asp:Button ID="Button2" runat="server" CssClass="btnOver"  Text="Application Name" />
+                  <asp:Button ID="Button3" runat="server" CssClass="btnOver"  Text="Infra Name" />
+             
+  </div>
+              
+</div>
+
         <div class="container">
 
   <!-- Modal -->
