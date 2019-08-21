@@ -811,7 +811,7 @@ DeleteCommand="DELETE FROM [Audit_Infrastructure_CI] where [Transaction_ID]=@Tra
                   </fieldset>
                        </asp:Panel>
 
-                   <asp:Panel runat="server" ID="panel8" Visible="false" >
+                   <asp:Panel runat="server" ID="panel8" Visible="false" > 
               <fieldset class="form-content">
             <legend class="heading1">Grid display for Joined Value</legend>
                   <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource16" AutoGenerateColumns="False" DataKeyNames="CR_Number">
