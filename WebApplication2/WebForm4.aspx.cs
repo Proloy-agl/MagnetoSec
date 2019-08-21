@@ -12,7 +12,28 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            int valA = Convert.ToInt32(Session["valueA"]);
+            if (valA == 1)
+            {
+                Panel3.Visible = false;
+                Panel2.Visible = true;
+                Panel4.Visible = false;
+                Panel5.Visible = false;
+            }
+            if (valA == 2)
+            {
+                Panel3.Visible = false;
+                Panel2.Visible = false;
+                Panel4.Visible = true;
+                Panel5.Visible = false;
+            }
+            if (valA == 3)
+            {
+                Panel3.Visible = false;
+                Panel2.Visible = false;
+                Panel4.Visible = false;
+                Panel5.Visible = true;
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)

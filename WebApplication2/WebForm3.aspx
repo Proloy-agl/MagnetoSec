@@ -193,6 +193,9 @@ color:black;
 
 .btnOver:hover {opacity: 0.6}
 
+.buttonCard{
+    background-color:transparent;
+}
 
        </style>
        <script>
@@ -282,8 +285,8 @@ function off() {
 					</picture> 
 				</div> 
 				<div class="sfc-card-content"> 
-					<div class="sfc-card-title"><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Manage CIs and Relationships</asp:LinkButton>
-                        <button onclick="on()" type="button">Turn on overlay effect</button>
+					<div class="sfc-card-title"><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" Visible="false">Manage CIs and Relationships</asp:LinkButton>
+                        <button onclick="on()" type="button" class="buttonCard" >Manage CIs and Relationships</button>
 					</div>
                     
 					<div class="sfc-card-desc">Browse through this link to manage CIs and inter relationships for maintenance of currency of CMDB outside any change request.</div> 
@@ -314,9 +317,9 @@ function off() {
           <div id="overlay" onclick="off()">
   <div id="text">Search By <br />
      
-                  <asp:Button ID="Button1" runat="server" CssClass="btnOver" Text="CR Number" />
-                  <asp:Button ID="Button2" runat="server" CssClass="btnOver"  Text="Application Name" />
-                  <asp:Button ID="Button3" runat="server" CssClass="btnOver"  Text="Infra Name" />
+                  <asp:Button ID="Button1" runat="server" CssClass="btnOver" Text="CR Number" OnClick="CR_Click" />
+                  <asp:Button ID="Button2" runat="server" CssClass="btnOver"  Text="Application Name" OnClick="App_Click" />
+                  <asp:Button ID="Button3" runat="server" CssClass="btnOver"  Text="Infra Name" OnClick="Infra_Click" />
              
   </div>
               

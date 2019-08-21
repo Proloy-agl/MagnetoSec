@@ -19,5 +19,20 @@ namespace WebApplication2
             Response.Redirect("WebForm4.aspx");
 
         }
+        protected void CR_Click(object sender, EventArgs e)
+        {
+            Session["valueA"] = 1;
+            Response.Redirect("WebForm4.aspx");
+        }
+        protected void App_Click(object sender, EventArgs e)
+        {
+            Session["valueA"] = 2;
+            Response.Redirect("WebForm4.aspx");
+        }
+        protected void Infra_Click(object sender, EventArgs e)
+        {
+            Session["valueA"] = 3;
+            Response.Redirect("WebForm4.aspx");
+        }
     }
 }
