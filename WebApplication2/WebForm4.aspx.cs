@@ -10,6 +10,7 @@ namespace WebApplication2
 {
     public partial class WebForm4 : System.Web.UI.Page
     {
+        public virtual System.Web.UI.WebControls.GridLines GridLines { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             int valA = Convert.ToInt32(Session["valueA"]);
