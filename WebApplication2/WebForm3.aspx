@@ -197,6 +197,13 @@ color:black;
     background-color:transparent;
 }
 
+.Card-text
+{
+    border: 0;
+    background: 0;
+    color: #23527c;
+}
+
        </style>
        <script>
 function on() {
@@ -286,7 +293,7 @@ function off() {
 				</div> 
 				<div class="sfc-card-content"> 
 					<div class="sfc-card-title"><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" Visible="false">Manage CIs and Relationships</asp:LinkButton>
-                        <button onclick="on()" type="button" class="buttonCard" >Manage CIs and Relationships</button>
+                        <button onclick="on()" type="button" class="Card-text" >Manage CIs and Relationships</button>
 					</div>
                     
 					<div class="sfc-card-desc">Browse through this link to manage CIs and inter relationships for maintenance of currency of CMDB outside any change request.</div> 

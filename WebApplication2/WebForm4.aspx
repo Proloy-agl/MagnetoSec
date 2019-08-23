@@ -440,8 +440,6 @@
     .GridView1 > tbody > tr > td { border: 2px ridge black; padding: 3px; }     
       
 
-    .EditG{color:lightskyblue}
-    .Delete{color:red}
 
     </style>
 </head>
@@ -532,19 +530,19 @@
                       <Columns>
                           <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item"  />
-                          <asp:BoundField DataField="CR_NUMBER" HeaderText="CR NUMBER" SortExpression="CR_NUMBER" />
-                          <asp:BoundField DataField="App_ID" HeaderText="App ID" SortExpression="App_ID" />
-                          <asp:BoundField DataField="Application_Name" HeaderText="Application Name" SortExpression="Application_Name" />
+                          <asp:BoundField DataField="CR_NUMBER" HeaderText="CR NUMBER" SortExpression="CR_NUMBER" ReadOnly="true" />
+                          <asp:BoundField DataField="App_ID" HeaderText="App ID" SortExpression="App_ID"  ReadOnly="true" />
+                          <asp:BoundField DataField="Application_Name" HeaderText="Application Name" SortExpression="Application_Name"  ReadOnly="true" />
                           <asp:BoundField DataField="Application_Category" HeaderText="Application Category" SortExpression="Application_Category" />
                           <asp:BoundField DataField="Application_Complexity" HeaderText="Application Complexity" SortExpression="Application_Complexity" />
                           <asp:BoundField DataField="Remedy_Group" HeaderText="Remedy Group" SortExpression="Remedy_Group" />
-                          <asp:BoundField DataField="Application_Environment" HeaderText="Application Environment" SortExpression="Application_Environment" />
+                          <asp:BoundField DataField="Application_Environment" HeaderText="Application Environment" SortExpression="Application_Environment"  />
                          <%-- <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
                           <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
                           <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
-                          <asp:BoundField DataField="Expr1" HeaderText="Expr1" ReadOnly="True" SortExpression="Expr1" />
+                         <%-- <asp:BoundField DataField="Expr1" HeaderText="Expr1" ReadOnly="True" SortExpression="Expr1" />
                           <asp:BoundField DataField="Data_Id" HeaderText="Data Id" ReadOnly="True" SortExpression="Data_Id" />
-                          <asp:BoundField DataField="Expr2" HeaderText="Expr2" ReadOnly="True" SortExpression="Expr2" />
+                          <asp:BoundField DataField="Expr2" HeaderText="Expr2" ReadOnly="True" SortExpression="Expr2" />--%>
                           <asp:BoundField DataField="M2Infra" HeaderText="M2Infra" ReadOnly="True" SortExpression="M2Infra" />
                           <asp:BoundField DataField="Alias" HeaderText="Alias" ReadOnly="True" SortExpression="Alias" />
                           <asp:BoundField DataField="Business_Unit" HeaderText="Business Unit" ReadOnly="True" SortExpression="Business_Unit" />
@@ -559,17 +557,17 @@
                           <asp:BoundField DataField="Exit_Date" HeaderText="Exit Date" ReadOnly="True" SortExpression="Exit_Date" />
                           <asp:BoundField DataField="DR_Tiering" HeaderText="DR Tiering" ReadOnly="True" SortExpression="DR_Tiering" />
                           <asp:BoundField DataField="Architectural_Recommendation" ReadOnly="True" HeaderText="Architectural Recommendation" SortExpression="Architectural_Recommendation" />
-                          <asp:BoundField DataField="Created_Date" HeaderText="Created Date" ReadOnly="True" SortExpression="Created_Date" />
-                          <asp:BoundField DataField="Modified_Date" HeaderText="Modified Date" ReadOnly="True" SortExpression="Modified_Date" />
+                         <%-- <asp:BoundField DataField="Created_Date" HeaderText="Created Date" ReadOnly="True" SortExpression="Created_Date" />
+                          <asp:BoundField DataField="Modified_Date" HeaderText="Modified Date" ReadOnly="True" SortExpression="Modified_Date" />--%>
                           <asp:BoundField DataField="Archived_Date" HeaderText="Archived Date" SortExpression="Archived_Date" />
-                          <asp:BoundField DataField="Expr3" HeaderText="Expr3" SortExpression="Expr3" />
+                          <%--<asp:BoundField DataField="Expr3" HeaderText="Expr3" SortExpression="Expr3" />--%>
                           <%--<asp:BoundField DataField="Transaction_Date" HeaderText="Transaction_Date" SortExpression="Transaction_Date" />
                           <asp:BoundField DataField="Transaction_Type" HeaderText="Transaction_Type" SortExpression="Transaction_Type" />
                           <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />--%>
-                          <asp:BoundField DataField="Updated_By" HeaderText="Updated By" SortExpression="Updated_By" />
-                          <asp:BoundField DataField="Remedy_Status" HeaderText="Remedy Status" SortExpression="Remedy_Status" />
-                          <asp:BoundField DataField="App_Name_Id" HeaderText="App Name Id" SortExpression="App_Name_Id" />
-                          <asp:BoundField DataField="Environment" HeaderText="Environment" SortExpression="Environment" />
+                          <%--<asp:BoundField DataField="Updated_By" HeaderText="Updated By" SortExpression="Updated_By" ReadOnly="true" />--%>
+                          <asp:BoundField DataField="Remedy_Status" HeaderText="Remedy Status" SortExpression="Remedy_Status"  ReadOnly="true" />
+                         <%-- <asp:BoundField DataField="App_Name_Id" HeaderText="App Name Id" SortExpression="App_Name_Id"  ReadOnly="true" />--%>
+                          <%--<asp:BoundField DataField="Environment" HeaderText="Environment" SortExpression="Environment" />--%>
                       </Columns>
                   </asp:GridView>
                        </div>
@@ -590,8 +588,8 @@
                            <Columns>
                               <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
-                               <asp:BoundField DataField="CR_Number" HeaderText="CR Number" ReadOnly="True" SortExpression="CR_Number" />
-                               <asp:BoundField DataField="CI_Name" HeaderText="CI Name" SortExpression="CI_Name" />
+                               <asp:BoundField DataField="CR_Number" HeaderText="CR Number" ReadOnly="True" SortExpression="CR_Number"  />
+                               <asp:BoundField DataField="CI_Name" HeaderText="CI Name" SortExpression="CI_Name" ReadOnly="true"/>
                                <asp:BoundField DataField="System_Environment" HeaderText="System Environment" SortExpression="System_Environment" />
                                <asp:BoundField DataField="Primary_Capability" HeaderText="Primary Capability" SortExpression="Primary_Capability" />
                                <asp:BoundField DataField="Owner" HeaderText="Owner" SortExpression="Owner" />
@@ -619,7 +617,7 @@
                                <Columns>
                                    <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
-                                   <asp:BoundField DataField="CR_Number" HeaderText="CR Number" ReadOnly="True" SortExpression="CR_Number" />
+                                   <asp:BoundField DataField="CR_Number" HeaderText="CR Number" ReadOnly="True" SortExpression="CR_Number"  />
                                     <asp:BoundField DataField="SR_ID" HeaderText="Onboarding SR Reference" SortExpression="SR ID" ReadOnly="true" />
                                    <asp:BoundField DataField="CI_Name" HeaderText="CI Name" SortExpression="CI_Name" />
                                    <asp:BoundField DataField="System_Environment" HeaderText="System Environment" SortExpression="System_Environment" />
@@ -660,7 +658,7 @@
                            <Columns>
                                <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
-                               <asp:BoundField DataField="CR_Number" HeaderText="CR Number" SortExpression="CR_Number" />
+                               <asp:BoundField DataField="CR_Number" HeaderText="CR Number" SortExpression="CR_Number" ReadOnly="true" />
                                <asp:BoundField DataField="App_CI_Name" HeaderText="App CI Name" SortExpression="App_CI_Name" />
                                <asp:BoundField DataField="Infra_CI_Name" HeaderText="Infra CI Name" SortExpression="Infra_CI_Name" />
                                <%--<asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
@@ -740,9 +738,9 @@
                       <Columns>
                            <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
-                          <asp:BoundField DataField="CR_NUMBER" HeaderText="CR NUMBER" SortExpression="CR_NUMBER" />
-                          <asp:BoundField DataField="App_ID" HeaderText="App ID" SortExpression="App_ID" />
-                          <asp:BoundField DataField="Application_Name" HeaderText="Application Name" SortExpression="Application_Name" />
+                          <asp:BoundField DataField="CR_NUMBER" HeaderText="CR NUMBER" SortExpression="CR_NUMBER" ReadOnly="true" />
+                          <asp:BoundField DataField="App_ID" HeaderText="App ID" SortExpression="App_ID" ReadOnly="true" />
+                          <asp:BoundField DataField="Application_Name" HeaderText="Application Name" SortExpression="Application_Name" ReadOnly="true" />
                           <asp:BoundField DataField="Application_Category" HeaderText="Application Category" SortExpression="Application_Category" />
                           <asp:BoundField DataField="Application_Complexity" HeaderText="Application Complexity" SortExpression="Application_Complexity" />
                           <asp:BoundField DataField="Remedy_Group" HeaderText="Remedy Group" SortExpression="Remedy_Group" />
@@ -750,9 +748,9 @@
                          <%-- <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
                           <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
                           <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
-                          <asp:BoundField DataField="App_Id1" HeaderText="App Id Readinow" ReadOnly="True" SortExpression="App_Id1" />
+                         <%-- <asp:BoundField DataField="App_Id1" HeaderText="App Id Readinow" ReadOnly="True" SortExpression="App_Id1" />--%>
                           <asp:BoundField DataField="Data_Id" HeaderText="Data Id" ReadOnly="True" SortExpression="Data_Id" />
-                          <asp:BoundField DataField="Application_Name1" HeaderText="Application Name Readinow" ReadOnly="True" SortExpression="Application_Name1" />
+                         <%-- <asp:BoundField DataField="Application_Name1" HeaderText="Application Name Readinow" ReadOnly="True" SortExpression="Application_Name1" />--%>
                           <asp:BoundField DataField="M2Infra" HeaderText="M2Infra" ReadOnly="True" SortExpression="M2Infra" />
                           <asp:BoundField DataField="Alias" HeaderText="Alias" ReadOnly="True" SortExpression="Alias" />
                           <asp:BoundField DataField="Business_Unit" HeaderText="Business Unit" ReadOnly="True" SortExpression="Business_Unit" />
@@ -798,7 +796,7 @@
                           <Columns>
                                <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
-                              <asp:BoundField DataField="CR_Number" HeaderText="CR Number" SortExpression="CR_Number" />
+                              <asp:BoundField DataField="CR_Number" HeaderText="CR Number" SortExpression="CR_Number" ReadOnly="true" />
                               <asp:BoundField DataField="App_CI_Name" HeaderText="App CI Name" SortExpression="App_CI_Name" />
                               <asp:BoundField DataField="Infra_CI_Name" HeaderText="Infra CI Name" SortExpression="Infra_CI_Name" />
                               <%--<asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
@@ -843,7 +841,7 @@
                            <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
                           <asp:BoundField DataField="CR_Number" HeaderText="CR Number" ReadOnly="True" SortExpression="CR_Number" />
-                          <asp:BoundField DataField="CI_Name" HeaderText="CI Name" SortExpression="CI_Name" />
+                          <asp:BoundField DataField="CI_Name" HeaderText="CI Name" SortExpression="CI_Name" ReadOnly="true" />
                           <asp:BoundField DataField="System_Environment" HeaderText="System Environment" SortExpression="System_Environment" />
                           <asp:BoundField DataField="Primary_Capability" HeaderText="Primary Capability" SortExpression="Primary_Capability" />
                           <asp:BoundField DataField="Owner" HeaderText="Owner" SortExpression="Owner" />
@@ -860,7 +858,7 @@
                           <asp:BoundField DataField="Serial_No" HeaderText="Serial No" ReadOnly="True" SortExpression="Serial_No" />
                           <asp:BoundField DataField="In_Service" HeaderText="In Service" ReadOnly="True" SortExpression="In_Service" />
                           <asp:BoundField DataField="Type" HeaderText="Type" ReadOnly="True" SortExpression="Type" />
-                          <asp:BoundField DataField="Last_Edited_Date" HeaderText="Last Edited Date" ReadOnly="True" SortExpression="Last_Edited_Date" />
+                          <%--<asp:BoundField DataField="Last_Edited_Date" HeaderText="Last Edited Date" ReadOnly="True" SortExpression="Last_Edited_Date" />--%>
                           <asp:BoundField DataField="Memory" HeaderText="Memory" ReadOnly="True" SortExpression="Memory" />
                           <asp:BoundField DataField="Hardware" HeaderText="Hardware" ReadOnly="True" SortExpression="Hardware" />
                           <asp:BoundField DataField="Building" HeaderText="Building" ReadOnly="True" SortExpression="Building" />
@@ -916,7 +914,7 @@
                           <Columns>
                                <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
-                              <asp:BoundField DataField="CR_Number" HeaderText="CR Number" SortExpression="CR_Number" />
+                              <asp:BoundField DataField="CR_Number" HeaderText="CR Number" SortExpression="CR_Number" ReadOnly="true" />
                               <asp:BoundField DataField="Parent_Infra_CI_Name" HeaderText="Parent Infra CI Name" SortExpression="Parent_Infra_CI_Name" />
                               <asp:BoundField DataField="Child_Infra_CI_Name" HeaderText="Child Infra CI Name" SortExpression="Child_Infra_CI_Name" />
                               <%--<asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
