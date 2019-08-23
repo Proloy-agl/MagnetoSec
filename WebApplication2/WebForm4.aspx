@@ -135,11 +135,17 @@
         }
 
         .top-part {
-            font-size: 57px;
-            font-weight: bold;
-            line-height: 88px;
-            color: #0075CC;
+                font-size: 57px;
+    font-weight: bold;
+    line-height: 88px;
+    color: #0075CC;
+    background: #fff;
+    min-height: 97px;
         }
+        .logo1-secured {
+    float: left;
+    margin: 10px 30px 0 20px;
+}
 
         .clear {
             clear: both;
@@ -439,7 +445,11 @@
     .GridView1 > tbody > tr > th {background-color:#6031A6;} 
     .GridView1 > tbody > tr > td { border: 2px ridge black; padding: 3px; }     
       
+     .logo1-secured {
 
+     margin:10px 0px 0 20px;
+
+}
 
     </style>
 </head>

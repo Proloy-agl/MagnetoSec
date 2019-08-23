@@ -265,7 +265,9 @@ img.lazy-removed {
     right: 1%;
     bottom:10px!important;
 }
-
+.modal-backdrop {
+    opacity:0.9;
+}
 
 .carousel-control.left, .carousel-control.right
 {

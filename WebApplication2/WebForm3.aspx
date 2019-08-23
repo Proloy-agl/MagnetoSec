@@ -204,6 +204,142 @@ color:black;
     color: #23527c;
 }
 
+
+
+ .modal-footer .logo1
+    {
+            width: 150px;
+    float: left;
+    }
+
+
+.modal-content
+{
+    background:none!important;
+    position:relative;
+}
+
+.modal-footer {
+    border-top: 0;
+        padding-top: 0;
+}
+
+
+.button1 {
+    align-content: normal;
+    border-radius: 7px;
+    padding: 0px 20px;
+    font-size: 16px;
+    margin: 12px 0px 10px 0;
+    float: right;
+    height: 36px;
+    color: white;
+    box-shadow: 0;
+    font-weight: normal;
+    cursor: pointer;
+    background-image: none;
+    background-color: #6031A6;
+    border: 0;
+    float: right;
+    margin-right: 27px;
+}
+
+    .button1:hover {
+        color: white;
+       background-image: linear-gradient(to right, #6031A6, #B51DB7);
+    }
+
+.modal-footer .button1{
+     position: relative;
+    z-index: 99;
+    border: 0;
+    margin-right: 9px;
+    bottom: 10px;
+}
+.new-box-container {
+    list-style: none;
+    list-style-type: none;
+
+    padding: 20px 18px 7px 22px;
+    opacity: 0.3;
+    min-height:164px;
+}
+
+
+.new-box {
+    list-style: none;
+    list-style-type: none;
+    padding:43px 18px 15px 43px;
+    width: 100%;
+    position: absolute;
+    border: 1px solid #737070;
+    z-index: 9;
+    top:23px;
+
+    border-top: 0;
+    min-height:262px;
+        margin-top: 26px;
+}
+
+.modal-content {
+    background: none !important;
+    position: relative;
+}
+
+.new-box ul li {
+    list-style: none;
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+    width: 98%;
+    margin-bottom:17px;
+    color: white;
+}
+
+    .new-box ul li div {
+        float: left;
+        margin-left: 12px;
+        width: 45%;
+    }
+
+    .new-box ul li input {
+        border: 1px solid #A7A9B3;
+        border-radius: 6px;
+        height: 26px;
+        line-height: 23px;
+        width: 99.5%;
+        padding-left: .2%;
+        color: #333;
+    }
+
+    .new-box ul li select {
+        border: 1px solid #A7A9B3;
+        border-radius: 6px;
+        height: 26px;
+        line-height: 26px;
+        width: 100%;
+        color: #333;
+    }
+
+.validate {
+    color: #ff8720 !important;
+}
+
+
+.text-label {
+    margin-bottom: 12px;
+}
+
+    .text-label span {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .modal-header
+    {
+border-bottom:0!important;
+    }
+
+
        </style>
        <script>
 function on() {
@@ -344,28 +480,28 @@ function off() {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Infrastructure CI onboarding form</h4>
         </div>
-        <div class="modal-body">
+        <div class="new-box">
          <ul>
                             <li>
-                                <label>
+                                <div>
                                     <asp:Label ID="Label1" runat="server" Text="SR No."></asp:Label>
-                                </label>
+                                </div>
                                 <div>
                                     <asp:TextBox ID="SR_ID" runat="server"></asp:TextBox>
                                 </div>
                             </li>
                              <li>
-                                <label>
+                                <div>
                                     <asp:Label ID="Label3" runat="server" Text="CI Name"></asp:Label>
-                                </label>
+                                </div>
                                 <div>
                                     <asp:TextBox ID="CI_NAME" runat="server"></asp:TextBox>
                                 </div>
                             </li>
                             <li>
-                                <label>
+                                <div>
                                     <asp:Label ID="Label2" runat="server" Text="CI STATUS"></asp:Label>
-                                </label>
+                                </div>
 
                                 <div>
                                     <asp:DropDownList ID="DropDownList2" runat="server">
@@ -387,14 +523,16 @@ function off() {
                                     </asp:DropDownList>
                                 </div>
                             </li>
+             </ul>
                                 <div class="clear"></div>
                             
-                                                   </ul>
+                                                   
         </div>
+          <div class="modal-body new-box-container"></div>
         <div class="modal-footer">
              <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/m-logo.png"  class="logo1-secured" />
          <%-- <button type="button" class="button1" data-dismiss="modal" >Submit</button>--%>
-            <asp:Button ID="Button4" runat="server" Text="Submit"  OnClick="CI_SumbitBtn_Click"  />
+            <asp:Button ID="Button4" runat="server" Text="Submit" CssClass="button1 newbutton"  OnClick="CI_SumbitBtn_Click"  />
         </div>
       </div>
       
