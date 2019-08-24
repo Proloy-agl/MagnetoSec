@@ -20,6 +20,7 @@ namespace WebApplication2
                 Panel2.Visible = true;
                 Panel4.Visible = false;
                 Panel5.Visible = false;
+                Panel9.Visible = false;
             }
             if (valA == 2)
             {
@@ -27,6 +28,7 @@ namespace WebApplication2
                 Panel2.Visible = false;
                 Panel4.Visible = true;
                 Panel5.Visible = false;
+                Panel9.Visible = false;
             }
             if (valA == 3)
             {
@@ -34,6 +36,16 @@ namespace WebApplication2
                 Panel2.Visible = false;
                 Panel4.Visible = false;
                 Panel5.Visible = true;
+                Panel9.Visible = false;
+            }
+            if (valA == 4)
+            {
+                Panel3.Visible = false;
+                Panel2.Visible = false;
+                Panel4.Visible = false;
+                Panel5.Visible = false;
+                Panel9.Visible = true;
+
             }
         }
 
@@ -75,6 +87,10 @@ namespace WebApplication2
         protected void Button5_Click(object sender, EventArgs e)
         {
             panel7.Visible = true;
+        }
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            panel10.Visible = true;
         }
 
         protected void Button2_Click(object sender, EventArgs e)

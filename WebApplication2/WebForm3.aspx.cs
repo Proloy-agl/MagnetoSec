@@ -36,7 +36,11 @@ namespace WebApplication2
             Session["valueA"] = 3;
             Response.Redirect("WebForm4.aspx");
         }
-
+        protected void SR_Click(object sender, EventArgs e)
+        {
+            Session["valueA"] = 4;
+            Response.Redirect("WebForm4.aspx");
+        }
         protected void CI_SumbitBtn_Click(object sender, EventArgs e)
         {
             string c1, c2, c3;

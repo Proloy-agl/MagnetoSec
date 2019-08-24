@@ -463,6 +463,7 @@ function off() {
                   <asp:Button ID="Button1" runat="server" CssClass="btnOver" Text="CR Number" OnClick="CR_Click" />
                   <asp:Button ID="Button2" runat="server" CssClass="btnOver"  Text="Application Name" OnClick="App_Click" />
                   <asp:Button ID="Button3" runat="server" CssClass="btnOver"  Text="Infra Name" OnClick="Infra_Click" />
+                   <asp:Button ID="Button5" runat="server" CssClass="btnOver"  Text="SR Number" OnClick="SR_Click" />
              
   </div>
               
@@ -530,7 +531,7 @@ function off() {
         </div>
           <div class="modal-body new-box-container"></div>
         <div class="modal-footer">
-             <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/m-logo.png"  class="logo1-secured" />
+             <%--<asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/m-logo.png"  class="logo1-secured" />--%>
          <%-- <button type="button" class="button1" data-dismiss="modal" >Submit</button>--%>
             <asp:Button ID="Button4" runat="server" Text="Submit" CssClass="button1 newbutton"  OnClick="CI_SumbitBtn_Click"  />
         </div>

@@ -516,6 +516,17 @@
                         </fieldset>                                     
                     </asp:Panel>
 
+                     <asp:Panel ID="Panel9" runat="server" Visible="false">
+                             <fieldset class="form-content search-box ">
+       <asp:Label ID="Label4" runat="server" ><h4>SR Number :</h4></asp:Label>
+       <asp:TextBox ID="TextBox7" runat="server" CssClass="input" ></asp:TextBox>
+       <asp:Button ID="Button6" runat="server" CssClass="button1" Text="Search" OnClick="Button6_Click"  />
+      <asp:TextBox ID="TextBox8" runat="server" visible="false"></asp:TextBox>
+       <br />
+       <br />
+                        </fieldset>                                     
+                    </asp:Panel>
+
    </div>
                   <asp:Panel runat="server" ID="panel456" Visible="false">
               <fieldset class="form-content">
@@ -583,8 +594,8 @@
                        </div>
                        <div class="table-wrapper">
                    <br />    <h4>Infra Attributes associated with CR</h4>
-                            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="CR_Number" DataSourceID="SqlDataSource2" Visible="true"  
-   CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True" >
+                            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="CR_Number" DataSourceID="SqlDataSource2" Visible="false"  
+   CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True"  >
         <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
     <HeaderStyle Font-Size="7pt" Width="400px" BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" Wrap="false"></HeaderStyle>
     <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
@@ -991,6 +1002,40 @@
                  
                   </fieldset>
                        </asp:Panel>
+
+                   <asp:Panel runat="server" ID="panel10" Visible="false">
+              <fieldset class="form-content">
+            <legend class="heading1">Grid display for CI based on SR</legend>
+                   <div class="table-wrapper">
+                  <br />     <h4>CI attributes</h4>
+                 
+                      </div>
+                  <asp:GridView ID="GridView6" runat="server" AutoGenerateColumns="False" DataKeyNames="CI_Name" DataSourceID="SqlDataSource5" Visible="true"  
+   CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True" width="80px">
+        <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
+    <HeaderStyle Font-Size="7pt" Width="400px" BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" Wrap="false"></HeaderStyle>
+    <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
+    <RowStyle BackColor="#DEDFDE" ForeColor="Black" Wrap="false" />
+    <SelectedRowStyle BackColor="#9471DE" Font-Bold="True" ForeColor="White" />
+    <SortedAscendingCellStyle BackColor="#F1F1F1" />
+    <SortedAscendingHeaderStyle BackColor="#594B9C" />
+    <SortedDescendingCellStyle BackColor="#CAC9C9" />
+    <SortedDescendingHeaderStyle BackColor="#33276A" />
+                      <Columns>
+                          <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
+                        <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
+                          <asp:BoundField DataField="SR_ID" HeaderText="SR_ID" SortExpression="SR_ID" />
+                          <asp:BoundField DataField="CI_Name" HeaderText="CI_Name" ReadOnly="True" SortExpression="CI_Name" />
+                          <asp:BoundField DataField="CI_STATUS" HeaderText="CI_STATUS" SortExpression="CI_STATUS" />
+                      </Columns>
+                  </asp:GridView>                
+                  <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="SELECT * FROM [Magsec_Infra_Onboard] WHERE ([SR_ID] = @SR_ID)" UpdateCommand="UPDATE [Magsec_Infra_Onboard] SET [CI_Name]=@CI_Name,[CI_STATUS]=@CI_STATUS where [SR_ID]=@SR_ID  " DeleteCommand="DELETE FROM [Magsec_Infra_Onboard] where [SR_ID]=@SR_ID">
+                      <SelectParameters>
+                          <asp:ControlParameter ControlID="TextBox7" Name="SR_ID" PropertyName="Text" Type="String" />
+                      </SelectParameters>
+                  </asp:SqlDataSource>
+                  </fieldset>
+                      </asp:Panel>
 
                   <asp:Button ID="Button2" runat="server" CssClass="button1" Text="Back to Homepage" OnClick="Button2_Click" Style="margin-right:0;"  />
        

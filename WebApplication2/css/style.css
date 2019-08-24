@@ -265,8 +265,10 @@ img.lazy-removed {
     right: 1%;
     bottom:10px!important;
 }
-.modal-backdrop {
-    opacity:0.9;
+
+.modal-backdrop
+{
+    opacity:0.9 !important;
 }
 
 .carousel-control.left, .carousel-control.right
@@ -330,6 +332,11 @@ modal-footer .logo1-secured {
     float: left;
     margin: 0 30px 0 9px;
     width: 163px;
+}
+.modal fade-backdrop
+{
+    opacity:0.9;
+
 }
 
 
