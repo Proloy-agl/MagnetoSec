@@ -222,7 +222,7 @@
             border: 0;
             background: 0;
             color: #23527c;
-            /*text-align: left;*/
+            text-align: left;
         }
 
 
