@@ -459,11 +459,11 @@ function off() {
           
           <div id="overlay" onclick="off()">
   <div id="text">Search By <br />
-     
+                  <asp:Button ID="Button5" runat="server" CssClass="btnOver"  Text="SR Number" OnClick="SR_Click" />
                   <asp:Button ID="Button1" runat="server" CssClass="btnOver" Text="CR Number" OnClick="CR_Click" />
                   <asp:Button ID="Button2" runat="server" CssClass="btnOver"  Text="Application Name" OnClick="App_Click" />
                   <asp:Button ID="Button3" runat="server" CssClass="btnOver"  Text="Infra Name" OnClick="Infra_Click" />
-                   <asp:Button ID="Button5" runat="server" CssClass="btnOver"  Text="SR Number" OnClick="SR_Click" />
+                   
              
   </div>
               
