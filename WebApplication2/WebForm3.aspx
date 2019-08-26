@@ -222,6 +222,7 @@
             border: 0;
             background: 0;
             color: #23527c;
+            /*text-align: left;*/
         }
 
 
@@ -517,7 +518,7 @@
                         position: absolute;
                         top: 20%;
                         left: 22%;
-                        font-size: 30px;
+                        font-size: 50px;
                         color: white;
                         width: 70%;
                     }
@@ -577,7 +578,7 @@
                         }
 
                     .report h1 {
-                        color: #ff7652;
+                        color: #fff;
                         font-size: 26px;
                         margin: 20px 0 10px 0;
                     }
