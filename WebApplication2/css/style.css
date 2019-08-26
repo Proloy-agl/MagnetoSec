@@ -1,4 +1,13 @@
- .container-wrapper {
+ 
+.report
+{
+    float:left;
+    border:1px solid #f00;
+    height:300px;
+    width:400px;
+}
+
+.container-wrapper {
      width: 100%;
      margin: 0 auto;
      background: #fff;
@@ -338,6 +347,20 @@ modal-footer .logo1-secured {
     opacity:0.9;
 
 }
+
+
+ .banner-text
+ {
+     color:#fff;
+     font-size:22px;
+     font-weight:bold;
+     position:absolute;
+     z-index:9;
+     top:16px;
+     left:21px;
+     font-family:"Titillium Web";
+ }
+
 
 
 

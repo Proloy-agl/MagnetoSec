@@ -71,6 +71,12 @@
     <Content Include="Photos and Logos\b1.jpg" />
     <Content Include="Photos and Logos\b2.jpg" />
     <Content Include="Photos and Logos\b3.jpg" />
+    <Content Include="Photos and Logos\ic1.png" />
+    <Content Include="Photos and Logos\ic2.png" />
+    <Content Include="Photos and Logos\ic3.png" />
+    <Content Include="Photos and Logos\ic4.png" />
+    <Content Include="Photos and Logos\ic5.png" />
+    <Content Include="Photos and Logos\ic6.png" />
     <Content Include="Photos and Logos\m-big-logo.png" />
     <Content Include="Photos and Logos\m-logo.png" />
     <Content Include="Photos and Logos\magneto-logo2.png" />
@@ -81,6 +87,9 @@
     <Content Include="Photos and Logos\btn-bg.svg" />
     <Content Include="Photos and Logos\category.jpg" />
     <Content Include="Photos and Logos\front4.jpg" />
+    <Content Include="Photos and Logos\magneto-s.png" />
+    <Content Include="Photos and Logos\magneto.png" />
+    <Content Include="Photos and Logos\r-icon.png" />
     <Content Include="Photos and Logos\sm-im.jpg" />
     <Content Include="Photos and Logos\Tile1.jpg" />
     <Content Include="Photos and Logos\Tile2.jpg" />
