@@ -547,6 +547,7 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
+                       <EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
 
                       <Columns>
                           <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
@@ -605,7 +606,7 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
-
+<EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
                            <Columns>
                               <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
@@ -634,7 +635,7 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
-
+<EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
                                <Columns>
                                    <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
@@ -675,7 +676,7 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
-
+<EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
                            <Columns>
                                <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
@@ -701,7 +702,7 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
-
+<EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
                            <Columns>
                                 <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
@@ -755,7 +756,7 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
-
+<EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
                       <Columns>
                            <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
@@ -813,7 +814,7 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
-
+<EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
                           <Columns>
                                <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
@@ -857,7 +858,7 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
-
+<EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
                       <Columns>
                            <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
@@ -900,7 +901,7 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
-
+<EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
                           <Columns>
                                <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
@@ -931,7 +932,7 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
-
+<EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
                           <Columns>
                                <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
@@ -1021,6 +1022,7 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
+                      <EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
                       <Columns>
                           <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
                         <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
