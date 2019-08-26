@@ -169,8 +169,22 @@ color:black;
   z-index:999;
   cursor: pointer;
 }
+#overlay1 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index:999;
+  cursor: pointer;
+}
 
-#text{
+
+#text,#text1{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -178,7 +192,9 @@ color:black;
   color: white;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+
 }
+
 .btnOver {
   background-color: #f4511e;
   border: none;
@@ -349,6 +365,14 @@ function on() {
 function off() {
   document.getElementById("overlay").style.display = "none";
 }
+
+function on1() {
+    document.getElementById("overlay1").style.display = "block";
+}
+
+function off1() {
+    document.getElementById("overlay1").style.display = "none";
+}
 </script>
    </head>
    <body>
@@ -444,8 +468,8 @@ function off() {
 				</div> 
 				<div class="sfc-card-content"> 
 					<div class="sfc-card-title">
-                        <asp:LinkButton ID="LinkButton3" runat="server"> CMDB Metrics, Audits and Reports</asp:LinkButton>
-                       
+                        <asp:LinkButton ID="LinkButton3" runat="server" Visible="false"> CMDB Metrics, Audits and Reports</asp:LinkButton>
+                       <button onclick="on1()" type="button" class="Card-text" >CMDB Metrics, Audits and Reports</button>
                         
 					</div> 
 					<div class="sfc-card-desc">Do you wish to generate CMDB Reports, Metrics or perform any audits on the data in CMDB. Explore here.</div> 
@@ -465,6 +489,18 @@ function off() {
                   <asp:Button ID="Button3" runat="server" CssClass="btnOver"  Text="Infra Name" OnClick="Infra_Click" />
                    
              
+  </div>
+              </div>
+
+               <div id="overlay1" onclick="off1()">
+  <div id="text1">View Reports <br />
+      <asp:Button ID="Button10" runat="server" CssClass="btnOver"  Text="Report For Completeness of Required fields"  />
+       <asp:Button ID="Button11" runat="server" CssClass="btnOver"  Text="Report For Completeness of Recommended fields"  />
+                  <asp:Button ID="Button7" runat="server" CssClass="btnOver"  Text="Report For Duplicate CIs"  />
+                  <asp:Button ID="Button8" runat="server" CssClass="btnOver" Text="Report For Orphan CIs "  />
+                  <asp:Button ID="Button9" runat="server" CssClass="btnOver"  Text="Report For Stale CIs "  />
+                  
+           
   </div>
               
 </div>
