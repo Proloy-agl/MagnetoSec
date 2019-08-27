@@ -26,6 +26,7 @@ namespace WebApplication2
             Context.GetOwinContext().Authentication.Challenge(
     new AuthenticationProperties { RedirectUri = "/" },
     OpenIdConnectAuthenticationDefaults.AuthenticationType);
+
         }
 
         protected void Loginout_Click(object sender, EventArgs e)
