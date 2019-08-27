@@ -484,7 +484,7 @@
                     <div class="sfc-card-content">
                         <div class="sfc-card-title">
                             <asp:LinkButton ID="LinkButton3" runat="server" Visible="false"> CMDB Metrics, Audits and Reports</asp:LinkButton>
-                            <button onclick="on1()" type="button" class="Card-text">CMDB Metrics, Audits and Reports</button>
+                            <button onclick="on1()" type="button" class="Card-text">CMDB Analytics - Metrics, Audits and Reports</button>
 
                         </div>
                         <div class="sfc-card-desc">Do you wish to generate CMDB Reports, Metrics or perform any audits on the data in CMDB. Explore here.</div>
