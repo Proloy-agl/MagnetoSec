@@ -24,7 +24,7 @@ namespace WebApplication2
         {
 
             Context.GetOwinContext().Authentication.Challenge(
-    new AuthenticationProperties { RedirectUri = "/" },
+    new AuthenticationProperties { RedirectUri = "https://magnetosecureddev.azurewebsites.net/WebForm3.aspx" },
     OpenIdConnectAuthenticationDefaults.AuthenticationType);
 
         }
