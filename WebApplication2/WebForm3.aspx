@@ -621,7 +621,7 @@
                     <h1>CMDB Completeness</h1>
                     <div class="r-button1" style="background: #d24824;">
                         <div class="icon5">
-                            <asp:Image ID="Image15" runat="server" ImageUrl="~/Photos and Logos/ic5.png" /></div>
+                            <asp:Image ID="Image15" runat="server" ImageUrl="~/Photos and Logos/ic5.png"  /></div>
                         <p>Required fields</p>
                         <asp:Button ID="Button13" runat="server" CssClass="" />
 
