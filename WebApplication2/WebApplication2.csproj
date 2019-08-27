@@ -176,7 +176,9 @@
     <Content Include="Photos and Logos\m-logo2.png" />
     <Content Include="css\reset.css" />
     <Content Include="css\style.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Login.aspx.cs">
@@ -188,7 +190,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup1.cs" />
-    <Compile Include="Startup11.cs" />
     <Compile Include="WebForm3.aspx.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
