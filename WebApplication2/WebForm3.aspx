@@ -516,33 +516,48 @@
                 <style>
                     #center {
                         position: absolute;
-                        top: 20%;
-                        left: 22%;
+                        top: 0%;
+                        left: 17%;
                         font-size: 50px;
                         color: white;
-                        width: 70%;
-                    }
+                        width: 78%;
+                                        }
 
-                    .report {
+                    .report1 {
                         float: left;
-                        width: 43%;
-                        margin-right: 7%;
+                        width: 44%;
+                        margin-right: 6%;
                     }
 
                     .r-button1 {
                         float: left;
-                        width: 136px;
-                        height: 127px;
+                        width: 108px;
+                        height: 106px;
                         background: #00aff0;
                         color: #fff;
                         font-size: 18px;
-                        padding: 10px;
+                        padding:6px;
                         position: relative;
                         margin-right: 5px;
                         margin-bottom: 5px;
                     }
+                    .newBtn
+                    {
+                         width: 98px;
+                        height:83px;
+                    }
+                    .newBtn32
+                    {
+                        width: 137px;
+                        height: 83px;
+                    }
+                    .big-wdt {
+                        width: 220px;
+                        background: #0073c6;
+                    }
 
-                    .report p {
+
+                    .report1 p {
                         width: 91%;
                         position: absolute;
                         bottom: 10px;
@@ -557,8 +572,8 @@
 
                     .r-button1 input {
                         position: absolute;
-                        width: 125px;
-                        height: 127px;
+                        width: 112px;
+                        height: 106px;
                         z-index: 99;
                         left: 0;
                         background: none;
@@ -568,23 +583,19 @@
                         margin: 0;
                     }
 
-                    .big-wdt {
-                        width: 255px;
-                        background: #0073c6;
-                    }
-
+                    
                         .big-wdt input {
-                            width: 255px;
+                            width: 212px;
                         }
 
-                    .report h1 {
+                    .report1 h1 {
                         color: #fff;
                         font-size: 26px;
                         margin: 20px 0 10px 0;
                     }
                 </style>
-                <div class="report">
-                    <h1>CMDB Correctness</h1>
+                <div class="report1">
+                    <h1>CMDB Accuracy</h1>
                     <div class="r-button1 big-wdt">
                         <div class="icon5">
                             <asp:Image ID="Image9" runat="server" ImageUrl="~/Photos and Logos/ic1.png" /></div>
@@ -599,27 +610,72 @@
                         <asp:Button ID="Button8" runat="server" CssClass="" />
 
                     </div>
-                    <div class="r-button1" style="background: #00aff0;">
+                    <div class="r-button1" style="background: #00DFED;">
                         <div class="icon5">
                             <asp:Image ID="Image13" runat="server" ImageUrl="~/Photos and Logos/ic3.png" /></div>
                         <p>Stale CIs </p>
                         <asp:Button ID="Button9" runat="server" CssClass="btnOver" Text="" />
 
                     </div>
-                    <div class="r-button1" style="background: #f6a623;">
+                    <div class="r-button1 newBtn" style="background:#B51DB7;">
                         <div class="icon5">
-                            <asp:Image ID="Image14" runat="server" ImageUrl="~/Photos and Logos/ic4.png" /></div>
+                            <asp:Image ID="Image14" runat="server" ImageUrl="~/Photos and Logos/ic4.png"/></div>
                         <p>Add report</p>
                         <asp:Button ID="Button10" runat="server" CssClass="btnOver" Text="" />
 
                     </div>
+                    <div class="r-button1 newBtn" style="background: #00DFED;">
+                        <div class="icon5">
+                            <asp:Image ID="Image19" runat="server" ImageUrl="~/Photos and Logos/ic4.png" /></div>
+                        <p>Add report</p>
+                        <asp:Button ID="Button15" runat="server" CssClass="btnOver" Text="" />
+
+                    </div>
+                    <div class="r-button1 newBtn" style="background: #FD334C;">
+                        <div class="icon5">
+                            <asp:Image ID="Image20" runat="server" ImageUrl="~/Photos and Logos/ic4.png" /></div>
+                        <p>Add report</p>
+                        <asp:Button ID="Button16" runat="server" CssClass="btnOver" Text="" />
+
+                    </div>
+
+                   
+                    <div class="r-button1 newBtn32" style="background:#00DFED;">
+                        <div class="icon5">
+                            <asp:Image ID="Image21" runat="server" ImageUrl="~/Photos and Logos/ic4.png"/></div>
+                        <p>Add report</p>
+                        <asp:Button ID="Button17" runat="server" CssClass="btnOver" Text="" />
+
+                    </div>
+                    <div class="r-button1" style="background: #2CAA18;">
+                        <div class="icon5">
+                            <asp:Image ID="Image22" runat="server" ImageUrl="~/Photos and Logos/ic4.png" /></div>
+                        <p>Add report</p>
+                        <asp:Button ID="Button18" runat="server" CssClass="btnOver" Text="" />
+
+                    </div>
+                    <div class="r-button1 big-wdt">
+                        <div class="icon5">
+                            <asp:Image ID="Image17" runat="server" ImageUrl="~/Photos and Logos/ic1.png" /></div>
+                        <p>Report For Duplicate CIs</p>
+                        <asp:Button ID="Button11" runat="server" CssClass="" />
+
+                    </div>
+                    <div class="r-button1" style="background: #2CAA18;">
+                        <div class="icon5">
+                            <asp:Image ID="Image18" runat="server" ImageUrl="~/Photos and Logos/ic4.png" /></div>
+                        <p>Add report</p>
+                        <asp:Button ID="Button14" runat="server" CssClass="btnOver" Text="" />
+
+                    </div>
+                    
 
 
                 </div>
 
-                <div class="report">
+                <div class="report1">
                     <h1>CMDB Completeness</h1>
-                    <div class="r-button1" style="background: #d24824;">
+                    <div class="r-button1" style="background: #F6A623;">
                         <div class="icon5">
                             <asp:Image ID="Image15" runat="server" ImageUrl="~/Photos and Logos/ic5.png"  /></div>
                         <p>Required fields</p>
@@ -631,6 +687,44 @@
                             <asp:Image ID="Image16" runat="server" ImageUrl="~/Photos and Logos/ic6.png" /></div>
                         <p>Recommended fields</p>
                         <asp:Button ID="Button12" runat="server" CssClass="" />
+
+                    </div>
+                    <div class="r-button1" style="background: #F6A623;">
+                        <div class="icon5">
+                            <asp:Image ID="Image27" runat="server" ImageUrl="~/Photos and Logos/ic4.png" /></div>
+                        <p>Add report</p>
+                        <asp:Button ID="Button23" runat="server" CssClass="btnOver" Text="" />
+
+                    </div>
+                    
+                    <div class="r-button1 big-wdt" style="background: #001cb0; height:194px;">
+                        <div class="icon5">
+                            <asp:Image ID="Image32" runat="server" ImageUrl="~/Photos and Logos/ic6.png" /></div>
+                        <p>Recommended fields</p>
+                        <asp:Button ID="Button28" runat="server" CssClass="" />
+
+                    </div>
+                    <div class="r-button1 newBtn" style="background: #f6a623;">
+                        <div class="icon5">
+                            <asp:Image ID="Image33" runat="server" ImageUrl="~/Photos and Logos/ic4.png" /></div>
+                        <p>Add report</p>
+                        <asp:Button ID="Button29" runat="server" CssClass="btnOver" Text="" />
+
+                    </div>
+                    <div class="r-button1 newBtn" style="background: #FD334C; width:119px;">
+                        <div class="icon5">
+                            <asp:Image ID="Image34" runat="server" ImageUrl="~/Photos and Logos/ic4.png" /></div>
+                        <p>Add report</p>
+                        <asp:Button ID="Button30" runat="server" CssClass="btnOver" Text="" />
+
+                    </div>
+
+                   
+                    <div class="r-button1 newBtn32" style="background:#F80EC5;width: 222px; height: 105px;">
+                        <div class="icon5">
+                            <asp:Image ID="Image35" runat="server" ImageUrl="~/Photos and Logos/ic4.png"/></div>
+                        <p>Add report</p>
+                        <asp:Button ID="Button31" runat="server" CssClass="btnOver" Text="" />
 
                     </div>
 
