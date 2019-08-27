@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -78,6 +79,10 @@
     <Content Include="Photos and Logos\ic4.png" />
     <Content Include="Photos and Logos\ic5.png" />
     <Content Include="Photos and Logos\ic6.png" />
+    <Content Include="Photos and Logos\icon1.png" />
+    <Content Include="Photos and Logos\icon2.png" />
+    <Content Include="Photos and Logos\icon3.png" />
+    <Content Include="Photos and Logos\icon4.png" />
     <Content Include="Photos and Logos\m-big-logo.png" />
     <Content Include="Photos and Logos\m-logo.png" />
     <Content Include="Photos and Logos\magneto-logo2.png" />
