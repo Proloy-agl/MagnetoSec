@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
     <Content Include="Login.aspx" />
     <Content Include="Photos and Logos\agl-logo2.png" />
     <Content Include="Photos and Logos\b1.jpg" />
