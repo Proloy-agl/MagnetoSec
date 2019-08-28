@@ -15,6 +15,8 @@
     <link href="css/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
+    <!&mdash;Both in one line -->
+<link rel="prefetch prerender" href="https://magnetosecureddev.azurewebsites.net/WebForm3.aspx"/>
     <style>
      
         .loginbox {
