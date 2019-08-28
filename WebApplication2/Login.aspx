@@ -395,13 +395,13 @@
             </div>
             <div>
                 <nav class="navBar1">
-                    <asp:Image ID="Image3" runat="server" ImageUrl="~/Photos and Logos/user-icon.png" class="user" />
+                   <%-- <asp:Image ID="Image3" runat="server" ImageUrl="~/Photos and Logos/user-icon.png" class="user" />--%>
                     <div class="clear"></div>
                 </nav>
                  <div class="container">
                 <div class="containerX">
                     
-    <label >Please Click on Login for authenticating to Magneto</label>
+    <h3>Please Click on Login for authenticating to Magneto Secured</h3>
     <%--<input type="text" id="CR_box" placeholder=" CR Number" runat="server"/>--%>
 
                     
