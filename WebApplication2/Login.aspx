@@ -27,7 +27,7 @@
 }
       input[type="text"] {
   
-  border: 3px solid #a1a3a3;
+  border: 1px solid #a1a3a3;
   border-radius: 4px;
   box-shadow: 0 1px #fff;
   box-sizing: border-box;
