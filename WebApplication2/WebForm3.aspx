@@ -199,7 +199,7 @@
         }
 
         .btnOver {
-            background-color: #f4511e;
+            background-color: #F6A623;
             border: none;
             color: white;
             padding: 16px 32px;
