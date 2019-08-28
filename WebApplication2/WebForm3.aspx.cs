@@ -66,12 +66,12 @@ namespace WebApplication2
                     if (rowsAffected == 1)
 
                     {
-                        Response.Write("Successfully Onboarded CI");
+                       
                       
                     }
                     else
                     {
-                        Response.Write("Onboarding CI failure");
+                        
                     }
                 }
             }
