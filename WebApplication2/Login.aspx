@@ -16,6 +16,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
     <style>
+     
+        .loginbox {
+  background: #eceeee;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 207px;
+  margin: 20px auto 0;
+  width: 298px;
+}
+      input[type="text"] {
+  
+  border: 3px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding-left: 37px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+}
+
         body {
             background: #fff;
         }
@@ -370,7 +393,7 @@
             font-family: "Titillium Web";
         }
     </style>
-    <script>
+   <%-- <script>
         function on() {
             document.getElementById("overlay").style.display = "block";
         }
@@ -386,7 +409,7 @@
         function off1() {
             document.getElementById("overlay1").style.display = "none";
         }
-    </script>
+    </script>--%>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -399,11 +422,12 @@
                    <%-- <asp:Image ID="Image3" runat="server" ImageUrl="~/Photos and Logos/user-icon.png" class="user" />--%>
                     <div class="clear"></div>
                 </nav>
-                 <div class="container">
-                <div class="containerX">
-                    
-    <h3>Please Click on Login for authenticating to Magneto Secured</h3>
-    <%--<input type="text" id="CR_box" placeholder=" CR Number" runat="server"/>--%>
+               
+               
+                   <div class="loginbox" >
+   <%-- <h3>Please Click on Login for authenticating to Magneto Secured</h3>--%>
+                      <input type="text" placeholder="AGL ID" id="username"> 
+      <input type="text" placeholder="AGL SSO" id="Tbo" readonly="true"> 
 
                     
                      
@@ -411,6 +435,8 @@
     <asp:Button ID="Login" runat="server" Text="Login" OnClick="Login_Click" CssClass="button1"/>
     <asp:Button ID="Loginout" runat="server" Text="Logout"  OnClick="Loginout_Click" Visible="false" />
     <asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
+
+          </div>
     </div>
                      
                       
@@ -418,8 +444,7 @@
                     <div class="clear">
 
                     </div>
-            </div>
-                </div>
+           
             </div>
             </div>
    
