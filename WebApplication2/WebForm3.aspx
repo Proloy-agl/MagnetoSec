@@ -395,6 +395,7 @@
             </div>
             <div>
                 <nav class="navBar1">
+                    <asp:Label ID="Label7" runat="server" ForeColor="White"></asp:Label>
                     <asp:Image ID="Image3" runat="server" ImageUrl="~/Photos and Logos/user-icon.png" class="user" />
                     <div class="clear"></div>
                 </nav>
