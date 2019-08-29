@@ -408,7 +408,7 @@
            .navBar1 {
                background-image: linear-gradient(to right, #6031A6, #B51DB7);
                height: 40px;
-               text-align:right;
+               text-align:right!important;
            }
 
            .search-box
