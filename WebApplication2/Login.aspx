@@ -26,6 +26,7 @@
   height: 207px;
   margin: 20px auto 0;
   width: 298px;
+  box-shadow:0 20px 3px -9px #334;
 }
       input[type="text"] {
   
@@ -427,7 +428,6 @@
                
                
                    <div class="loginbox" >
-   <%-- <h3>Please Click on Login for authenticating to Magneto Secured</h3>--%>
                       <input type="text" placeholder="AGL ID" id="username"> 
       <input type="text" placeholder="AGL SSO" id="Tbo" readonly="true"> 
 
