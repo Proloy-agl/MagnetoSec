@@ -13,6 +13,10 @@ namespace WebApplication2
         public virtual System.Web.UI.WebControls.GridLines GridLines { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.UrlReferrer == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
             int valA = Convert.ToInt32(Session["valueA"]);
             if (valA == 1)
             {
