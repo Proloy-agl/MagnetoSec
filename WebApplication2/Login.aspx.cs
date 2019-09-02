@@ -22,7 +22,7 @@ namespace WebApplication2
 
         protected void Login_Click(object sender, EventArgs e)
         {
-
+            Session["CR_Num"] = 5;
             Context.GetOwinContext().Authentication.Challenge(
     new AuthenticationProperties { RedirectUri = "https://magnetosecureddev.azurewebsites.net/WebForm3.aspx" },
     OpenIdConnectAuthenticationDefaults.AuthenticationType);

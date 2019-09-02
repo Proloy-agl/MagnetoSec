@@ -18,6 +18,11 @@ namespace WebApplication2
             //{
             //    Response.Redirect("Login.aspx");
             //}
+            string check = Session["CR_Num"].ToString();
+            if (check != "5")
+            {
+                Response.Redirect("Login.aspx");
+            }
             Label7.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
         }
 
