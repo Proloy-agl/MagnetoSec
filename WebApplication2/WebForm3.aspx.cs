@@ -18,7 +18,7 @@ namespace WebApplication2
             //{
             //    Response.Redirect("Login.aspx");
             //}
-            //Label7.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
+            Label7.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
