@@ -14,10 +14,10 @@ namespace WebApplication2
         protected void Page_Load(object sender, EventArgs e)
         {
             string check = "";
-            //if (Request.UrlReferrer == null)
-            //{
-            //    Response.Redirect("Login.aspx");
-            //}
+            if (Request.UrlReferrer == null)
+            {
+              Response.Redirect("Login.aspx");
+            }
             check = Session["CR_Num"].ToString();
             if (check != "5")
             {
