@@ -13,12 +13,12 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        
+            string check = "";
             //if (Request.UrlReferrer == null)
             //{
             //    Response.Redirect("Login.aspx");
             //}
-            string check = Session["CR_Num"].ToString();
+            check = Session["CR_Num"].ToString();
             if (check != "5")
             {
                 Response.Redirect("Login.aspx");
