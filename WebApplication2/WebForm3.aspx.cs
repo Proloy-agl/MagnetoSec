@@ -16,7 +16,7 @@ namespace WebApplication2
             string check = "";
             if (Request.UrlReferrer == null)
             {
-              Response.Redirect("Login.aspx");
+                Response.Redirect("Login.aspx");
             }
             check = Session["CR_Num"].ToString();
             if (check != "5")
