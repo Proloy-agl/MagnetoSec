@@ -142,6 +142,7 @@
     <Content Include="Photos and Logos\icon4.png" />
     <Content Include="Photos and Logos\m-big-logo.png" />
     <Content Include="Photos and Logos\m-logo.png" />
+    <Content Include="Photos and Logos\m-s-logo-white.png" />
     <Content Include="Photos and Logos\magneto-logo2.png" />
     <Content Include="packages.config" />
     <Content Include="Photos and Logos\banner-logo.png" />

@@ -535,6 +535,15 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
         
         /// <summary>
+        /// Logoimage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Logoimage;
+        
+        /// <summary>
         /// Button4 control.
         /// </summary>
         /// <remarks>

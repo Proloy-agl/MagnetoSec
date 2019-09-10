@@ -818,7 +818,7 @@
                         </div>
                         <div class="modal-body new-box-container"></div>
                         <div class="modal-footer">
-                            <%--<asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/m-logo.png"  class="logo1-secured" />--%>
+                            <asp:Image ID="Logoimage" runat="server" ImageUrl="~/Photos and Logos/m-s-logo-white.png"  class="logo1-secured" />
                             <%-- <button type="button" class="button1" data-dismiss="modal" >Submit</button>--%>
                             <asp:Button ID="Button4" runat="server" Text="Submit" CssClass="button1 newbutton" OnClick="CI_SumbitBtn_Click" />
                         </div>
