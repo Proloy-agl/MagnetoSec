@@ -536,9 +536,9 @@
                    <asp:Panel ID="Panel1" runat="server">
                <div class="table-wrapper">
                    <h4>Application Attributes</h4>
-                       
-                   <asp:GridView ID="GridView13"  runat="server" AutoGenerateColumns="False" DataKeyNames="Transaction_ID" DataSourceID="SqlDataSource15" Visible="true"  
-   CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True" HeaderStyle-Wrap="true" >
+                  
+                   <asp:GridView ID="GridView8" runat="server" AutoGenerateColumns="False" DataKeyNames="Transaction_ID" DataSourceID="SqlDataSource6" Visible="true"  
+   CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True" >
         <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
     <HeaderStyle Font-Size="7pt" Width="400px" BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" Wrap="false"></HeaderStyle>
     <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
@@ -548,49 +548,51 @@
     <SortedAscendingHeaderStyle BackColor="#594B9C" />
     <SortedDescendingCellStyle BackColor="#CAC9C9" />
     <SortedDescendingHeaderStyle BackColor="#33276A" />
-                       <EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
+<EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
 
                       <Columns>
-                          <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
-                        <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item"  />
-                          <asp:BoundField DataField="CR_NUMBER" HeaderText="CR NUMBER" SortExpression="CR_NUMBER" ReadOnly="true" />
-                          <asp:BoundField DataField="App_ID" HeaderText="App ID" SortExpression="App_ID"  ReadOnly="true" />
-                          <asp:BoundField DataField="Application_Name" HeaderText="Application Name" SortExpression="Application_Name"  ReadOnly="true" />
-                          <asp:BoundField DataField="Application_Category" HeaderText="Application Category" SortExpression="Application_Category" />
-                          <asp:BoundField DataField="Application_Complexity" HeaderText="Application Complexity" SortExpression="Application_Complexity" />
-                          <asp:BoundField DataField="Remedy_Group" HeaderText="Remedy Group" SortExpression="Remedy_Group" />
-                          <asp:BoundField DataField="Application_Environment" HeaderText="Application Environment" SortExpression="Application_Environment"  />
-                         <%-- <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
+                           <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
+                        <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
+                          <asp:BoundField DataField="CR_NUMBER" HeaderText="CR_NUMBER" SortExpression="CR_NUMBER" />
+                          <asp:BoundField DataField="App_ID" HeaderText="App_ID" SortExpression="App_ID" />
+                          <asp:BoundField DataField="Application_Name" HeaderText="Application_Name" SortExpression="Application_Name" />
+                          <asp:BoundField DataField="Application_Category" HeaderText="Application_Category" SortExpression="Application_Category" />
+                          <asp:BoundField DataField="Application_Complexity" HeaderText="Application_Complexity" SortExpression="Application_Complexity" />
+                          <asp:BoundField DataField="Remedy_Group" HeaderText="Remedy_Group" SortExpression="Remedy_Group" />
+                          <asp:BoundField DataField="Application_Environment" HeaderText="Application_Environment" SortExpression="Application_Environment" />
+                          <asp:BoundField DataField="Transaction_ID" HeaderText="Transaction_ID" InsertVisible="False" ReadOnly="True" SortExpression="Transaction_ID" />
                           <asp:BoundField DataField="Transaction_Timestamp" HeaderText="Transaction_Timestamp" SortExpression="Transaction_Timestamp" />
-                          <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />--%>
-                         <%-- <asp:BoundField DataField="Expr1" HeaderText="Expr1" ReadOnly="True" SortExpression="Expr1" />
-                          <asp:BoundField DataField="Data_Id" HeaderText="Data Id" ReadOnly="True" SortExpression="Data_Id" />
-                          <asp:BoundField DataField="Expr2" HeaderText="Expr2" ReadOnly="True" SortExpression="Expr2" />--%>
-                          <asp:BoundField DataField="M2Infra" HeaderText="M2Infra" ReadOnly="True" SortExpression="M2Infra" />
-                          <asp:BoundField DataField="Alias" HeaderText="Alias" ReadOnly="True" SortExpression="Alias" />
-                          <asp:BoundField DataField="Business_Unit" HeaderText="Business Unit" ReadOnly="True" SortExpression="Business_Unit" />
-                          <%--<asp:BoundField DataField="Description" HeaderText="Description" ReadOnly="True" SortExpression="Description" />--%>
-                          <asp:BoundField DataField="Business_Owner" HeaderText="Business Owner" ReadOnly="True" SortExpression="Business_Owner" />
-                          <asp:BoundField DataField="Technical_Owner" HeaderText="Technical Owner" ReadOnly="True" SortExpression="Technical_Owner" />
-                          <asp:BoundField DataField="Service_Delivery_Manager" HeaderText="Service Delivery Manager" ReadOnly="True" SortExpression="Service_Delivery_Manager" />
-                          <asp:BoundField DataField="Hosting_Location" HeaderText="Hosting Location" ReadOnly="True" SortExpression="Hosting_Location" />
-                          <asp:BoundField DataField="Support_Vendor" HeaderText="Support Vendor" ReadOnly="True" SortExpression="Support_Vendor" />
-                          <asp:BoundField DataField="Manufacturer" HeaderText="Manufacturer" ReadOnly="True" SortExpression="Manufacturer" />
-                          <asp:BoundField DataField="Live_Date" HeaderText="Live Date" ReadOnly="True" SortExpression="Live_Date" />
-                          <asp:BoundField DataField="Exit_Date" HeaderText="Exit Date" ReadOnly="True" SortExpression="Exit_Date" />
-                          <asp:BoundField DataField="DR_Tiering" HeaderText="DR Tiering" ReadOnly="True" SortExpression="DR_Tiering" />
-                          <asp:BoundField DataField="Architectural_Recommendation" ReadOnly="True" HeaderText="Architectural Recommendation" SortExpression="Architectural_Recommendation" />
-                         <%-- <asp:BoundField DataField="Created_Date" HeaderText="Created Date" ReadOnly="True" SortExpression="Created_Date" />
-                          <asp:BoundField DataField="Modified_Date" HeaderText="Modified Date" ReadOnly="True" SortExpression="Modified_Date" />--%>
-                          <asp:BoundField DataField="Archived_Date" HeaderText="Archived Date" SortExpression="Archived_Date" />
-                          <%--<asp:BoundField DataField="Expr3" HeaderText="Expr3" SortExpression="Expr3" />--%>
-                          <%--<asp:BoundField DataField="Transaction_Date" HeaderText="Transaction_Date" SortExpression="Transaction_Date" />
+                          <asp:BoundField DataField="Transaction_Status" HeaderText="Transaction_Status" SortExpression="Transaction_Status" />
+                          <asp:BoundField DataField="Processing_Status" HeaderText="Processing_Status" SortExpression="Processing_Status" />
+                          <asp:BoundField DataField="Processing_Timestamp" HeaderText="Processing_Timestamp" SortExpression="Processing_Timestamp" />
+                          <asp:BoundField DataField="App_Id1" HeaderText="App_Id1" SortExpression="App_Id1" />
+                          <asp:BoundField DataField="Application_Name1" HeaderText="Application_Name1" SortExpression="Application_Name1" />
+                          <asp:BoundField DataField="M2Infra" HeaderText="M2Infra" SortExpression="M2Infra" />
+                          <asp:BoundField DataField="Alias" HeaderText="Alias" SortExpression="Alias" />
+                          <asp:BoundField DataField="Business_Unit" HeaderText="Business_Unit" SortExpression="Business_Unit" />
+                          <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
+                          <asp:BoundField DataField="Business_Owner" HeaderText="Business_Owner" SortExpression="Business_Owner" />
+                          <asp:BoundField DataField="Technical_Owner" HeaderText="Technical_Owner" SortExpression="Technical_Owner" />
+                          <asp:BoundField DataField="Service_Delivery_Manager" HeaderText="Service_Delivery_Manager" SortExpression="Service_Delivery_Manager" />
+                          <asp:BoundField DataField="Hosting_Location" HeaderText="Hosting_Location" SortExpression="Hosting_Location" />
+                          <asp:BoundField DataField="Support_Vendor" HeaderText="Support_Vendor" SortExpression="Support_Vendor" />
+                          <asp:BoundField DataField="Manufacturer" HeaderText="Manufacturer" SortExpression="Manufacturer" />
+                          <asp:BoundField DataField="Live_Date" HeaderText="Live_Date" SortExpression="Live_Date" />
+                          <asp:BoundField DataField="Exit_Date" HeaderText="Exit_Date" SortExpression="Exit_Date" />
+                          <asp:BoundField DataField="DR_Tiering" HeaderText="DR_Tiering" SortExpression="DR_Tiering" />
+                          <asp:BoundField DataField="Architectural_Recommendation" HeaderText="Architectural_Recommendation" SortExpression="Architectural_Recommendation" />
+                          <asp:BoundField DataField="Created_Date" HeaderText="Created_Date" SortExpression="Created_Date" />
+                          <asp:BoundField DataField="Modified_Date" HeaderText="Modified_Date" SortExpression="Modified_Date" />
+                          <asp:BoundField DataField="Archived_Date" HeaderText="Archived_Date" SortExpression="Archived_Date" />
+                          <asp:BoundField DataField="Transaction_Id1" HeaderText="Transaction_Id1" SortExpression="Transaction_Id1" />
+                          <asp:BoundField DataField="Transaction_Date" HeaderText="Transaction_Date" SortExpression="Transaction_Date" />
                           <asp:BoundField DataField="Transaction_Type" HeaderText="Transaction_Type" SortExpression="Transaction_Type" />
-                          <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />--%>
-                          <%--<asp:BoundField DataField="Updated_By" HeaderText="Updated By" SortExpression="Updated_By" ReadOnly="true" />--%>
-                          <asp:BoundField DataField="Remedy_Status" HeaderText="Remedy Status" SortExpression="Remedy_Status"  ReadOnly="true" />
-                         <%-- <asp:BoundField DataField="App_Name_Id" HeaderText="App Name Id" SortExpression="App_Name_Id"  ReadOnly="true" />--%>
-                          <%--<asp:BoundField DataField="Environment" HeaderText="Environment" SortExpression="Environment" />--%>
+                          <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
+                          <asp:BoundField DataField="App_Name_Id" HeaderText="App_Name_Id" SortExpression="App_Name_Id" />
+                          <asp:BoundField DataField="Application_Environment1" HeaderText="Application_Environment1" SortExpression="Application_Environment1" />
+                          <asp:BoundField DataField="Application_Category1" HeaderText="Application_Category1" SortExpression="Application_Category1" />
+                          <asp:BoundField DataField="Application_Complexity1" HeaderText="Application_Complexity1" SortExpression="Application_Complexity1" />
+                          <asp:BoundField DataField="Remedy_Group1" HeaderText="Remedy_Group1" SortExpression="Remedy_Group1" />
                       </Columns>
                   </asp:GridView>
                        </div>
@@ -996,7 +998,8 @@
                           <asp:ControlParameter ControlID="TextBox1" Name="CR_Number" PropertyName="Text" />
                       </SelectParameters>
                   </asp:SqlDataSource>
-                  <asp:SqlDataSource ID="SqlDataSource14" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="select * from [dbo].[Audit_Application_CI] INNER JOIN [dbo].[CI_APP_OUT] ON [dbo].[Audit_Application_CI].Application_Name = [dbo].[CI_APP_OUT].Application_Name AND [dbo].[Audit_Application_CI].Application_Environment=[dbo].[CI_APP_OUT].Environment  AND  ([dbo].[Audit_Application_CI].Application_Name= @Application_Name)" UpdateCommand="UPDATE [Audit_Application_CI] SET [App_ID]=@App_ID,[Application_Name]=@Application_Name,[Application_Category]=@Application_Category,[Application_Complexity]=@Application_Complexity,[Remedy_Group]=@Remedy_Group,[Application_Environment]=@Application_Environment where [Transaction_ID]=@Transaction_ID  " DeleteCommand="DELETE FROM [Audit_Application_CI] where [Transaction_ID]=@Transaction_ID" >
+                  <asp:SqlDataSource ID="SqlDataSource14" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="select * from [dbo].[Audit_Application_CI] inner join [dbo].[CI_APP_OUT] on [dbo].[Audit_Application_CI].[Application_Name] = [dbo].[CI_APP_OUT].Application_Name
+ and [dbo].[Audit_Application_CI].Application_Environment= [dbo].[CI_APP_OUT].Application_Environment and [dbo].[Audit_Application_CI].Application_Name=@Application_Name" UpdateCommand="UPDATE [Audit_Application_CI] SET [App_ID]=@App_ID,[Application_Name]=@Application_Name,[Application_Category]=@Application_Category,[Application_Complexity]=@Application_Complexity,[Remedy_Group]=@Remedy_Group,[Application_Environment]=@Application_Environment where [Transaction_ID]=@Transaction_ID  " DeleteCommand="DELETE FROM [Audit_Application_CI] where [Transaction_ID]=@Transaction_ID" >
                       <SelectParameters>
                           <asp:ControlParameter ControlID="TextBox3" Name="Application_Name" PropertyName="Text" />
                       </SelectParameters>
@@ -1041,8 +1044,24 @@
                       </asp:Panel>
 
                   <asp:Button ID="Button2" runat="server" CssClass="button1" Text="Back to Homepage" OnClick="Button2_Click" Style="margin-right:0;"  />
-       
 
+
+
+                  
+      
+                  
+            
+                
+
+      
+           
+            
+                  <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:CMDB_DB_DEVConnectionString %>" SelectCommand="select * from [dbo].[Audit_Application_CI] inner join [dbo].[CI_APP_OUT] on [dbo].[Audit_Application_CI].[Application_Name] = [dbo].[CI_APP_OUT].Application_Name
+ and [dbo].[Audit_Application_CI].Application_Environment= [dbo].[CI_APP_OUT].Application_Environment and [dbo].[Audit_Application_CI].CR_NUMBER = @CR_Number" UpdateCommand="UPDATE [Audit_Application_CI] SET [App_ID]=@App_ID,[Application_Name]=@Application_Name,[Application_Category]=@Application_Category,[Application_Complexity]=@Application_Complexity,[Remedy_Group]=@Remedy_Group,[Application_Environment]=@Application_Environment where [Transaction_ID]=@Transaction_ID  " DeleteCommand="DELETE FROM [Audit_Application_CI] where [Transaction_ID]=@Transaction_ID">
+                      <SelectParameters>
+                          <asp:ControlParameter ControlID="TextBox1" Name="CR_Number" PropertyName="Text" />
+                      </SelectParameters>
+                  </asp:SqlDataSource>
       
            
             
