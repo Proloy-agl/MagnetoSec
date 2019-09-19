@@ -76,8 +76,9 @@ namespace WebApplication2
                     if (rowsAffected == 1)
 
                     {
-                       
-                      
+                       SR_ID.Text = string.Empty;
+                       CI_NAME.Text = string.Empty;
+
                     }
                     else
                     {
