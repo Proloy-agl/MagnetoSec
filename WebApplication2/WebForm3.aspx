@@ -385,6 +385,10 @@
         function off1() {
             document.getElementById("overlay1").style.display = "none";
         }
+
+        function ShowPopup() {
+            $("#Button20").click();
+        }
     </script>
 </head>
 <body>
@@ -757,7 +761,7 @@
         </div>
 
         <div class="container">
-
+            <asp:Panel ID="Panel1" runat="server">
             <!-- Modal -->
             <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog">
@@ -820,87 +824,54 @@
                         <div class="modal-footer">
                             <asp:Image ID="Logoimage" runat="server" ImageUrl="~/Photos and Logos/m-s-logo-white.png"  class="logo2-secured" />
                             <%-- <button type="button" class="button1" data-dismiss="modal" >Submit</button>--%>
-                            <asp:Button ID="Button4" runat="server" Text="Submit" CssClass="button1 newbutton" OnClick="CI_SumbitBtn_Click" />
+                            <asp:Button ID="Button4" runat="server" Text="Submit" CssClass="button1 newbutton" OnClick="CI_SumbitBtn_Click"/>
+                            <asp:Button ID="Button20" runat="server" Visible="false" Text="Proceed" CssClass="button1 newbutton"  data-toggle="modal" data-target="#myModal1" data-dismiss="modal" />
                         </div>
                     </div>
 
                 </div>
             </div>
+  </asp:Panel>
+            <asp:Panel ID="Panel2" runat="server" >
             <!-- Modal -->
-            <div class="modal fade" id="myModal111" role="dialog">
+            <div class="modal fade" id="myModal1" role="dialog">
                 <div class="modal-dialog">
 
                     <!-- Modal content-->
                     <div class="modal-content">
-                        <div class="top-part12">
-                            <asp:Image ID="Image7" runat="server" ImageUrl="~/Photos and Logos/agl-logo.png" Width="40px" class="logo" />
-                            Magneto<i>lite</i>
+                        <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Successfully onboarded CI</h4>
                         </div>
-                        <p class="heading12">Infrastructure CI onboarding form</p>
+                        <div class="new-box">
+                            <ul>
+                                 <li>
+                                    <div>
+                                         <asp:Label ID="Label4" runat="server" Text="Would you like to onboard a new CI on this SR"></asp:Label> 
+                                    </div>
+                                    <div>
+                                       <asp:TextBox ID="SR" runat="server"></asp:TextBox>
+                                    </div>
+                                </li>
+                              
+                                 
+                            </ul>
+                            <div class="clear"></div>
 
-
-                        <div class="modal-body">
-                            <div class="modal-containt">
-
-                                <ul>
-                                    <li>
-                                        <div>
-                                            <asp:Label ID="Label4" runat="server" Text="CI ID"></asp:Label>
-                                        </div>
-                                        <div>
-                                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <asp:Label ID="Label5" runat="server" Text="CI Name"></asp:Label>
-                                        </div>
-                                        <div>
-                                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <asp:Label ID="Label6" runat="server" Text="CI STATUS"></asp:Label>
-                                        </div>
-
-                                        <div>
-                                            <asp:DropDownList ID="DropDownList1" runat="server">
-                                                <asp:ListItem>----Select----</asp:ListItem>
-                                                <asp:ListItem>Ordered</asp:ListItem>
-                                                <asp:ListItem>Received</asp:ListItem>
-                                                <asp:ListItem>Being Assembled</asp:ListItem>
-                                                <asp:ListItem>Deployed</asp:ListItem>
-                                                <asp:ListItem>In Repair</asp:ListItem>
-                                                <asp:ListItem>Down</asp:ListItem>
-                                                <asp:ListItem>End Of Life</asp:ListItem>
-                                                <asp:ListItem>Transferred</asp:ListItem>
-                                                <asp:ListItem>Delete</asp:ListItem>
-                                                <asp:ListItem>In Inventory</asp:ListItem>
-                                                <asp:ListItem>On Loan</asp:ListItem>
-                                                <asp:ListItem>Disposed</asp:ListItem>
-                                                <asp:ListItem>Reserved</asp:ListItem>
-                                                <asp:ListItem>Return to Vendor</asp:ListItem>
-                                            </asp:DropDownList>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                                <div class="clear"></div>
-
-                                <asp:Button ID="Button6" runat="server" Text="Submit" CssClass="button1" />
-                                <div class="clear"></div>
-                            </div>
 
                         </div>
-
-
-
+                        <div class="modal-body new-box-container"></div>
+                        <div class="modal-footer">
+                            <asp:Image ID="Image7" runat="server" ImageUrl="~/Photos and Logos/m-s-logo-white.png"  class="logo2-secured" />
+                            <%-- <button type="button" class="button1" data-dismiss="modal" >Submit</button>--%>
+                            <asp:Button ID="Button6" runat="server" Text="Yes" CssClass="button1 newbutton"/>
+                            <asp:Button ID="Button19" runat="server" Text="No" CssClass="button1 newbutton"/>
+                        </div>
                     </div>
+
                 </div>
             </div>
-
+</asp:Panel>
 
         </div>
 

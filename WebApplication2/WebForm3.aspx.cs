@@ -13,6 +13,7 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             string check = "";
             if (Request.UrlReferrer == null)
             {
@@ -55,6 +56,7 @@ namespace WebApplication2
         {
             string c1, c2, c3;
             c1 = SR_ID.Text;
+            SR.Text = c1;
             c2 = CI_NAME.Text;
             c3 = DropDownList2.SelectedValue;
             string connString = "Data Source=transformationdev.database.windows.net;Initial Catalog=CMDB_DB_DEV;User ID=Transadmin;Password=Trans$@dmin";
@@ -76,13 +78,24 @@ namespace WebApplication2
                     if (rowsAffected == 1)
 
                     {
+
                        SR_ID.Text = string.Empty;
                        CI_NAME.Text = string.Empty;
 
+                        string message = "Your CI has been onboraded successfully.";
+                        string script = "window.onload = function(){ alert('";
+                        script += message;
+                        script += "')};";
+                        ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", script, true);
                     }
                     else
                     {
-                        
+                        string message = "CI onboarding failed";
+                        string script = "window.onload = function(){ alert('";
+                        script += message;
+                        script += "')};";
+                        ClientScript.RegisterStartupScript(this.GetType(), "Failure", script, true);
+
                     }
                 }
             }
