@@ -359,15 +359,22 @@
 
 
         .banner-text {
-            color: #fff;
-            font-size: 22px;
-            font-weight: bold;
-            position: absolute;
-            z-index: 9;
-            top: 16px;
-            left: 21px;
-            font-family: "Titillium Web";
+                color: #fff;
+                font-size: 38px;
+                font-weight: bold;
+                position: absolute;
+                z-index: 9;
+                top: 12px;
+                left: 27px;
+                font-family: "Titillium Web";
+                text-shadow: 2px 2px #757575;
+                font-family: "Titillium Web";
+                line-height: 45px;
         }
+       .banner-text p {
+    margin-left: 152px;
+}
+
  
         .footer {
             height: 66px;
@@ -418,8 +425,7 @@
             </div>
             <div class="banner-containt">
                 <div class="banner">
-                    <div class="banner-text">
-                        <asp:Image ID="Image8" runat="server" ImageUrl="~/Photos and Logos/magneto-s.png" /></div>
+                    <div class="banner-text">AGL Next Gen CMDB <p>Administrator Platform</p></div>
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">

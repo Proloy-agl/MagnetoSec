@@ -17,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
-
+     <link href="css/style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -396,9 +396,6 @@
             width: auto;
         }
 
-    .GridView1 { border-spacing: 3px; border-collapse: separate; }
-    .GridView1 > tbody > tr > th, 
-    .GridView1 > tbody > tr > td { border: 2px ridge black; padding: 3px; }
     .user {
     float: right;
     margin-top: 5px;
@@ -426,6 +423,7 @@
                 border: 1px solid #8e8e8e;
                 height: 33px;
                 width: 23%;
+                padding-left:10px;
             }
               .search-box h4{
                   line-height:26px;
@@ -442,9 +440,7 @@
 
               }
 
-   .GridView1 { border-spacing: 3px; border-collapse: separate; }
-    .GridView1 > tbody > tr > th {background-color:#6031A6;} 
-    .GridView1 > tbody > tr > td { border: 2px ridge black; padding: 3px; }     
+     
       
      .logo1-secured {
 
@@ -1011,12 +1007,9 @@
                    <asp:Panel runat="server" ID="panel10" Visible="false">
               <fieldset class="form-content">
             <legend class="heading1">Grid display for CI based on SR</legend>
-                   <div class="table-wrapper">
-                  <br />     <h4>CI attributes</h4>
-                 
-                      </div>
+                   <h4 class="hdingText">CI attributes</h4>
                   <asp:GridView ID="GridView6" runat="server" AutoGenerateColumns="False" DataKeyNames="CI_Name" DataSourceID="SqlDataSource5" Visible="true"  
-   CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True" width="80px">
+   CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True" width="200px">
         <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
     <HeaderStyle Font-Size="7pt" Width="400px" BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" Wrap="false"></HeaderStyle>
     <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />

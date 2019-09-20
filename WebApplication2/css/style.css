@@ -361,17 +361,54 @@ modal-footer .logo1-secured {
 }
 
 
- .banner-text
+ /*.banner-text
  {
-     color:#fff;
-     font-size:22px;
-     font-weight:bold;
-     position:absolute;
-     z-index:9;
-     top:16px;
-     left:21px;
+        color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 9;
+    top: 12px;
+    left: 27px;
+    font-family: "Titillium Web";
+    text-shadow: 2px 2px #757575;
+    border-bottom: 1px solid #fff;
      font-family:"Titillium Web";
+ }*/
+
+
+
+
+ .GridView1
+ {
+        border-spacing: 0!important;
+    border-collapse: collapse !important;
+    background: #fff;
+    box-shadow: 0px 0px 4px 2px #a0a0a0;
+    
  }
+    .GridView1 > tbody > tr > th{
+        border: 0;
+        padding: 12px;
+        border-left: 1px solid #fff!important;
+        border-bottom: 1px solid #fff!important;
+        font-size:15px;
+        text-align:center;
+    }
+    .GridView1 > tbody > tr > td
+    {
+         border: 0;
+        padding: 12px;
+        border-left: 1px solid #fff!important;
+        border-bottom: 1px solid #fff!important;
+        text-align:center;
+    }
+    .hdingText{
+
+        font-size: 19px;
+    margin-bottom: 12px;
+    color: #220b90;
+    }
 
 
 
