@@ -14,17 +14,17 @@ namespace WebApplication2
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            string check = "";
-            if (Request.UrlReferrer == null)
-            {
-                Response.Redirect("Login.aspx");
-            }
-            check = Session["CR_Num"].ToString();
-            if (check != "5")
-            {
-                Response.Redirect("Login.aspx");
-            }
-            Label7.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
+            //string check = "";
+            //if (Request.UrlReferrer == null)
+            //{
+            //    Response.Redirect("Login.aspx");
+            //}
+            //check = Session["CR_Num"].ToString();
+            //if (check != "5")
+            //{
+            //    Response.Redirect("Login.aspx");
+            //}
+            //Label7.Text = System.Security.Claims.ClaimsPrincipal.Current.FindFirst("name").Value;
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)

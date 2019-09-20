@@ -368,6 +368,18 @@
             left: 21px;
             font-family: "Titillium Web";
         }
+ 
+        .footer {
+            height: 66px;
+            clear: both;
+            background-color: #c4c4c4;
+            font-size: 14px;
+            line-height: 66px;
+            position: relative;
+            padding-left: 15px;
+            text-align:center;
+        }
+
     </style>
     <script>
         function on() {
@@ -496,9 +508,18 @@
                     </div>
                 </div>
                 <div class="clear"></div>
+                
 
 
             </div>
+
+            <div class="footer">
+            
+            <div><b>Administered by:</b> Workplace Experience Team, AGL e: serviceexperience@agl.com.au</div>
+        </div>
+
+
+
         </div>
 
         <div id="overlay" onclick="off()">
