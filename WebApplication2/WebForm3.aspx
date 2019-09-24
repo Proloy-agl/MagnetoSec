@@ -790,7 +790,7 @@
         <div class="container">
             <asp:Panel ID="Panel1" runat="server">
             <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal fade" id="myModal" role="dialog"  data-backdrop="static" data-keyboard="false">
                 <div class="modal-dialog">
 
                     <!-- Modal content-->
@@ -861,7 +861,7 @@
   </asp:Panel>
             <asp:Panel ID="Panel2" runat="server" >
             <!-- Modal -->
-            <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal fade" id="myModal1" role="dialog" data-backdrop="static" data-keyboard="false">
                 <div class="modal-dialog">
 
                     <!-- Modal content-->
