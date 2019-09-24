@@ -851,8 +851,8 @@
                         <div class="modal-footer">
                             <asp:Image ID="Logoimage" runat="server" ImageUrl="~/Photos and Logos/m-s-logo-white.png"  class="logo2-secured" />
                             <%-- <button type="button" class="button1" data-dismiss="modal" >Submit</button>--%>
-                            <asp:Button ID="Button4" runat="server" Text="Submit" CssClass="button1 newbutton" OnClick="CI_SumbitBtn_Click"/>
-                            <asp:Button ID="Button20" runat="server" Visible="false" Text="Proceed" CssClass="button1 newbutton"  data-toggle="modal" data-target="#myModal1" data-dismiss="modal" />
+                            <asp:Button ID="Button4" runat="server" Text="Submit" CssClass="button1 newbutton" OnClick="CI_SumbitBtn_Click" data-toggle="modal" data-target="#myModal1"  />
+                            <asp:Button ID="Button20" runat="server"  Text="Proceed" CssClass="button1 newbutton"  data-toggle="modal" data-target="#myModal1" />
                         </div>
                     </div>
 
