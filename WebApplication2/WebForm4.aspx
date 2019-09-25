@@ -535,7 +535,7 @@
                   
                    <asp:GridView ID="GridView8" runat="server" AutoGenerateColumns="False" DataKeyNames="Transaction_ID" DataSourceID="SqlDataSource6" Visible="true"  
    CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True" >
-        <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
+    <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
     <HeaderStyle Font-Size="7pt" Width="400px" BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" Wrap="false"></HeaderStyle>
     <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
     <RowStyle BackColor="#DEDFDE" ForeColor="Black" Wrap="false" />
@@ -1060,7 +1060,10 @@
             
                 
 
-      
+      <div class="footer">
+            
+            <div><b>Administered by:</b> Workplace Experience Team, AGL e: serviceexperience@agl.com.au</div>
+        </div>
            
             
              </form>
