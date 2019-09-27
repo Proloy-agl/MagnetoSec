@@ -454,9 +454,8 @@
             font-size: 14px ;
             line-height: 66px ;
             position: relative ;
-            padding-left: 15px ;
             text-align:center ;
-            position: fixed;
+            position: absolute;
             bottom: 0;
             width: 100%;
         }
