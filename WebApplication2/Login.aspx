@@ -405,6 +405,9 @@
             position: relative ;
             padding-left: 15px ;
             text-align:center ;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
    <%-- <script>
