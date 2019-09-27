@@ -447,6 +447,19 @@
      margin:10px 0px 0 20px;
 
 }
+      .footer {
+            height: 66px ;
+            clear: both ;
+            background-color: #c4c4c4 ;
+            font-size: 14px ;
+            line-height: 66px ;
+            position: relative ;
+            padding-left: 15px ;
+            text-align:center ;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
 
     </style>
 </head>
