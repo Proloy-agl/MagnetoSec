@@ -447,18 +447,7 @@
      margin:10px 0px 0 20px;
 
 }
-      .footer {
-            height: 66px ;
-            clear: both ;
-            background-color: #c4c4c4 ;
-            font-size: 14px ;
-            line-height: 66px ;
-            position: relative ;
-            text-align:center ;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
+     
 
     </style>
 </head>
@@ -1073,10 +1062,7 @@
             
                 
 
-      <div class="footer">
-            
-            <div><b>Administered by:</b> Workplace Experience Team, AGL e: serviceexperience@agl.com.au</div>
-        </div>
+     
            
             
              </form>
