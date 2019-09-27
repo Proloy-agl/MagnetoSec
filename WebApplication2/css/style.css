@@ -410,14 +410,14 @@ modal-footer .logo1-secured {
     color: #220b90;
     }
     .footer {
-            height: 66px !important;
-            clear: both !important;
-            background-color: #c4c4c4 !important;
-            font-size: 14px !important;
-            line-height: 66px !important;
-            position: relative !important;
-            padding-left: 15px !important;
-            text-align:center !important;
+            height: 66px ;
+            clear: both ;
+            background-color: #c4c4c4 ;
+            font-size: 14px ;
+            line-height: 66px ;
+            position: relative ;
+            padding-left: 15px ;
+            text-align:center ;
         }
 
 
