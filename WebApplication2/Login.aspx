@@ -418,7 +418,7 @@
     <form id="form1" runat="server">
         <div class="container-wrapper">
             <div class="top-part">
-                 <asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/logo.png" Width="86px" class="logo" />
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Photos and Logos/logo.png" Width="86px" class="logo" />
                 <asp:Image ID="Image2" runat="server" ImageUrl="~/Photos and Logos/m-logo.png" class="logo1-secured" />
             </div>
             <div>
