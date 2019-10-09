@@ -596,7 +596,7 @@
                        </div>
                        <div class="table-wrapper">
                    <br />    <h4>Infra Attributes associated with CR</h4>
-                            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="CR_Number" DataSourceID="SqlDataSource2" Visible="false"  
+                            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="Transaction_ID" DataSourceID="SqlDataSource2" Visible="false"  
    CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True"  >
         <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
     <HeaderStyle Font-Size="7pt" Width="400px" BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" Wrap="false"></HeaderStyle>
