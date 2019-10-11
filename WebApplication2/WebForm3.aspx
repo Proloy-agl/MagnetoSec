@@ -437,14 +437,42 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/b1.jpg" Style="width: 100%;" />
+                                <asp:Image ID="Image11" runat="server" ImageUrl="~/Photos and Logos/1.jpg" Style="width: 100%;" />
                             </div>
                             <div class="item">
-                                <asp:Image ID="Image12" runat="server" ImageUrl="~/Photos and Logos/b2.jpg" Style="width: 100%;" />
+                                <asp:Image ID="Image12" runat="server" ImageUrl="~/Photos and Logos/2.jpg" Style="width: 100%;" />
                             </div>
                             <div class="item">
-                                <asp:Image ID="Image4" runat="server" ImageUrl="~/Photos and Logos/b3.jpg" Style="width: 100%;" />
+                                <asp:Image ID="Image4" runat="server" ImageUrl="~/Photos and Logos/3.jpg" Style="width: 100%;" />
                             </div>
+                            <div class="item">
+                                <asp:Image ID="Image23" runat="server" ImageUrl="~/Photos and Logos/4.jpg" Style="width: 100%;" />
+                            </div>
+                            <div class="item">
+                                <asp:Image ID="Image24" runat="server" ImageUrl="~/Photos and Logos/5.jpg" Style="width: 100%;" />
+                            </div>
+                            <div class="item">
+                                <asp:Image ID="Image25" runat="server" ImageUrl="~/Photos and Logos/6.jpg" Style="width: 100%;" />
+                            </div>
+                            <div class="item">
+                                <asp:Image ID="Image26" runat="server" ImageUrl="~/Photos and Logos/7.jpg" Style="width: 100%;" />
+                            </div>
+                            <div class="item">
+                                <asp:Image ID="Image28" runat="server" ImageUrl="~/Photos and Logos/8.jpg" Style="width: 100%;" />
+                            </div>
+                            <div class="item">
+                                <asp:Image ID="Image29" runat="server" ImageUrl="~/Photos and Logos/9.jpg" Style="width: 100%;" />
+                            </div>
+                            <div class="item">
+                                <asp:Image ID="Image30" runat="server" ImageUrl="~/Photos and Logos/10.jpg" Style="width: 100%;" />
+                            </div>
+                            <div class="item">
+                                <asp:Image ID="Image31" runat="server" ImageUrl="~/Photos and Logos/11.jpg" Style="width: 100%;" />
+                            </div>
+                            <div class="item">
+                                <asp:Image ID="Image36" runat="server" ImageUrl="~/Photos and Logos/12.jpg" Style="width: 100%;" />
+                            </div>
+
                         </div>
                         <!-- Left and right controls -->
                         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -522,7 +550,7 @@
 
             <div class="footer">
             
-            <div><b>Administered by:</b> Workplace Experience Team, AGL e: serviceexperience@agl.com.au</div>
+            <div><b>Administered by:</b> Service Experience Team, AGL e: serviceexperience@agl.com.au</div>
         </div>
 
 
