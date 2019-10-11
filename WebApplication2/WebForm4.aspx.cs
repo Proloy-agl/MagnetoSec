@@ -15,6 +15,7 @@ namespace WebApplication2
         {
             if (Request.UrlReferrer == null)
             {
+
                 Response.Redirect("Login.aspx");
             }
             int valA = Convert.ToInt32(Session["valueA"]);
