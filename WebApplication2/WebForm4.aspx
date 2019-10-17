@@ -742,7 +742,7 @@
 
                   <asp:Panel runat="server" ID="panel6" Visible="false">
               <fieldset class="form-content">
-            <legend class="heading1">Grid display for attributes and relationship based on App Name</legend>
+            <legend class="heading1">Grid display for attributes and relationship based on App CI Name</legend>
                    <div class="table-wrapper">
                   <br />     <h4>Application Attributes</h4>
                  
