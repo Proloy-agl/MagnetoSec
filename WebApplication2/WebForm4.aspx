@@ -746,8 +746,8 @@
                    <div class="table-wrapper">
                   <br />     <h4>Application Attributes</h4>
                  
-                      <asp:GridView ID="GridView15" runat="server" AutoGenerateColumns="False" DataKeyNames="Transaction_ID" DataSourceID="SqlDataSource14" Visible="true"  
-   CssClass="GridView1" GridLines="none" CellPadding="-1" CellSpacing="-1" ShowFooter="True" AllowSorting="True"  >
+                      <asp:GridView ID="GridView15" runat="server" AutoGenerateColumns="False" DataKeyNames="Transaction_ID" DataSourceID="SqlDataSource14"  
+   CssClass="GridView1" GridLines="None" CellSpacing="-1" ShowFooter="True" AllowSorting="True"  >
         <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
     <HeaderStyle Font-Size="7pt" Width="400px" BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" Wrap="false"></HeaderStyle>
     <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
@@ -759,12 +759,28 @@
     <SortedDescendingHeaderStyle BackColor="#33276A" />
 <EmptyDataTemplate>No Data found for the entry</EmptyDataTemplate>
                       <Columns>
-                           <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" />  
-                        <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" />
+                           <asp:CommandField ShowEditButton="true" ControlStyle-ForeColor="Green" HeaderText="Edit Item" >  
+                           <ControlStyle ForeColor="Green" />
+                           </asp:CommandField>
+                        <asp:CommandField ShowDeleteButton="true" ControlStyle-ForeColor="Red" HeaderText="Delete Item" >
+                           <ControlStyle ForeColor="Red" />
+                           </asp:CommandField>
                           <asp:BoundField DataField="CR_NUMBER" HeaderText="CR NUMBER" SortExpression="CR_NUMBER" ReadOnly="true" />
                           <asp:BoundField DataField="App_ID" HeaderText="App ID" SortExpression="App_ID" ReadOnly="true" />
                           <asp:BoundField DataField="Application_Name" HeaderText="Application Name" SortExpression="Application_Name" ReadOnly="true" />
-                          <asp:BoundField DataField="Application_Category" HeaderText="Application Category" SortExpression="Application_Category" />
+                           <asp:TemplateField HeaderText="Application Category" SortExpression="Application_Category">
+                               <EditItemTemplate>
+                                   <asp:DropDownList ID="DropDownList1" runat="server">
+                                       <asp:ListItem>Gold</asp:ListItem>
+                                       <asp:ListItem>Silver</asp:ListItem>
+                                       <asp:ListItem>Bronze</asp:ListItem>
+                                       <asp:ListItem>No Categorization</asp:ListItem>
+                                   </asp:DropDownList>
+                               </EditItemTemplate>
+                               <ItemTemplate>
+                                   <asp:Label ID="Label1" runat="server" Text='<%# Bind("Application_Category") %>'></asp:Label>
+                               </ItemTemplate>
+                           </asp:TemplateField>
                           <asp:BoundField DataField="Application_Complexity" HeaderText="Application Complexity" SortExpression="Application_Complexity" />
                           <asp:BoundField DataField="Remedy_Group" HeaderText="Remedy Group" SortExpression="Remedy_Group" />
                           <asp:BoundField DataField="Application_Environment" HeaderText="Application Environment" SortExpression="Application_Environment" />
